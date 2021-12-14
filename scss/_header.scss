@@ -1,0 +1,49 @@
+header {
+    height: 104px;
+}
+.header {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__phone {
+        margin-right: 20px;
+        color: $main-color;
+        text-decoration: none;
+        font-weight: 500;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.logo {
+    width: 78px;
+    img {
+        width: 100%;
+    }
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    &__item {
+        list-style-type: none;
+        margin: 0 20px;
+    }
+    &__link {
+        color: $main-color;
+        text-decoration: none;
+        font-weight: 500;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.hamburger {
+    display: none;
+}

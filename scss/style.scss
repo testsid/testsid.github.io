@@ -5,12 +5,14 @@
 }
 body {
     font-family: 'Montserrat', 'Arial', sans-serif;
+    background: #FAFAFA;
 }
 .container {
     margin: 0 auto;
     width: 85%;
 }
 @import '_vari';
+@import '_animation';
 
 .btn {
     background-color: $main-color;
@@ -23,6 +25,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .3s;
     &:hover {
         color: $main-color;
         background-color: #fff;
@@ -31,3 +34,4 @@ body {
 }
 
 @import '_header';
+@import '_promo';
