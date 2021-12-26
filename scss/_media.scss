@@ -1,0 +1,122 @@
+@media screen and (max-width:1024px) {
+    .menu {
+        &__link {
+            font-size: 12px;
+        }
+        &__item {
+            margin: 0 10px;
+        }
+    }
+    .logo {
+        width: 60px;
+    }
+    .header {
+        &__phone {
+            font-size: 12px;
+            margin-right: 6px;
+        }
+    }
+    .btn {
+        font-size: 12px;
+    }
+    .promo {
+        &__h {
+            font-size: 34px;
+            line-height: 41px;
+        }
+        &__subtitle {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__slogan {
+            font-size: 22px;
+            line-height: 29px;
+            padding: 10px 50px;
+        }
+        &__wrapper {
+            height: auto;
+        }
+        &__content {
+            margin-left: 50px;
+            padding: 50px 0 100px;
+
+        }
+    }
+}
+@media screen and(max-width:768px) {
+    .menu {
+        position: fixed;
+        
+        flex-direction: column;
+        top: 0;
+        right: -100%;
+        background: $main-color;
+        padding: 50px;
+        width: 70%;
+        height: 80vh;
+        transition: all .3s;
+        z-index: 3;
+        &_active {
+            right: 0;
+        }
+        &__item {
+            a {
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+        
+    }
+    .hamburger {
+        display: flex;
+    }
+    .header {
+        &__btn {
+            display: none;
+        }
+        &__phone {
+            margin-right: 31px;
+        }
+    }
+    .promo {
+        &__h {
+            font-size: 26px;
+            line-height: 29px;
+            text-align: center;
+        }
+        &__content {
+            width: 58%;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+        &__btn {
+            margin: 48px auto;
+        }
+        &__man {
+            img {
+                width: 100%;
+            }
+        }
+        &__slogan {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+}
+@media screen and(max-width:766px) {
+    .promo {
+        &__man {
+            display: none;
+        }
+        &__wrapper {
+            justify-content: center;
+            
+        }
+        &__content {
+            margin-left: 0;
+            padding-bottom: 50px;
+            width: 90%;
+        }
+    }
+}
