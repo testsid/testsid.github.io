@@ -1,0 +1,42 @@
+.exp {
+    padding: 50px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            height: 3px;
+            
+        }
+        &::-webkit-scrollbar-track {
+           
+            background: #f1f1f1;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #C4C4C4; 
+            
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background: #888888; 
+            
+        }
+
+    }
+    &__logo {
+        min-width: 223px;
+        margin: 20px 10px;
+        img {
+            width: 100%;
+        }
+    }
+    &__h {
+        text-align: center;
+        margin-bottom: 27px;
+    }
+    &__subtitle {
+        text-align: center;
+        margin-bottom: 34px;
+    }
+}

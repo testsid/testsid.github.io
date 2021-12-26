@@ -32,8 +32,21 @@ body {
         outline: 1px solid $main-color;
     }
 }
+.title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: $text-color;
+}
+.subtitle {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: $text-color;
+}
 
 @import '_header';
 @import '_promo';
+@import '_exp';
 
 @import '_media';
