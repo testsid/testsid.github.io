@@ -1,0 +1,32 @@
+.company {
+    padding: 100px 0;
+    &__h {
+        margin-top: 20px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 80px;
+        margin-top: 68px;
+    }
+    &__item {
+        width: 304px;
+        margin: 0 7px 40px;
+        img {
+            width: 100%;
+        }
+        &__title {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 24px;
+            color: $main-color;
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+    &__subtitle {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
