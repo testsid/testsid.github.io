@@ -44,11 +44,19 @@ body {
     line-height: 22px;
     color: $text-color;
 }
+.background {
+    width: 200px;
+    height: 200px;
+    background-image: radial-gradient(circle closest-corner at 20% 20%, $main-color 50%, transparent 50%);
+    background-size: 20px 20px;
+    position: absolute;
+}
 
 @import '_header';
 @import '_promo';
 @import '_exp';
 @import '_company';
 @import '_work';
+@import '_process';
 
 @import '_media';

@@ -3,10 +3,15 @@
     .title {
         margin-top: 20px;
     }
+    &__background {
+        top: -9%;
+        left: 29%;
+    }
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: start;
+        position: relative;
     }
     &__photo {
         width: 45%;
