@@ -174,4 +174,17 @@
             justify-content: center;
         }
     }
+    .company {
+        &__item {
+            img {
+                width: 80%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &__wrapper {
+            padding: 10px 0;
+            justify-content: center;
+        }
+    }
 }
