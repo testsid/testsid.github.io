@@ -72,6 +72,17 @@
             margin-top: 4px;
         }
     }
+    .work {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__photo {
+            display: none;
+        }
+        &__content {
+            width: auto;
+        }
+    }
 }
 @media screen and(max-width:768px) {
     .menu {
@@ -133,6 +144,7 @@
             line-height: 22px;
         }
     }
+   
 }
 @media screen and(max-width:766px) {
     .promo {
@@ -147,6 +159,19 @@
             margin-left: 0;
             padding-bottom: 50px;
             width: 90%;
+        }
+    }
+    .work {
+        padding: 50px 0 0;
+        &__item {
+            width: 90%;
+            .subtitle {
+             font-size: 14px;
+             line-height: 16px;
+            }
+        }
+        &__content__wrapper {
+            justify-content: center;
         }
     }
 }
