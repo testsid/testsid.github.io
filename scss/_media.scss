@@ -187,4 +187,22 @@
             justify-content: center;
         }
     }
+    .process {
+        padding: 60px 0;
+        .background {
+            display: none;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            width: 30px;
+            height: 30px;
+            &::after {
+                font-size: 12px;
+            }
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 30px;
+        }
+    }
 }

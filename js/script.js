@@ -1,5 +1,6 @@
-//menu
+
 window.addEventListener('DOMContentLoaded', () => {
+    //menu
     const menu = document.querySelector('.menu'),
     menuItem = document.querySelectorAll('.menu__item'),
     hamburger = document.querySelector('.hamburger');
@@ -15,4 +16,34 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.toggle('menu_active');
         });
     });
+
+    //process slider
+    const swiper = new Swiper('.swiper', {
+       
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+       
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        loop: true,
+      });
 });
