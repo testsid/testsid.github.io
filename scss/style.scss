@@ -38,6 +38,7 @@ body {
     font-size: 36px;
     line-height: 44px;
     color: $text-color;
+    margin-top: 20px;
 }
 .subtitle {
     font-weight: normal;
@@ -59,5 +60,6 @@ body {
 @import '_company';
 @import '_work';
 @import '_process';
+@import '_result';
 
 @import '_media';

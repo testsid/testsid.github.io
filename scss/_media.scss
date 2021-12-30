@@ -83,6 +83,13 @@
             width: auto;
         }
     }
+    .result {
+        &__circle {
+            width: 145px;
+            height: 145px;
+            padding-top: 43px;
+        }
+    }
 }
 @media screen and(max-width:768px) {
     .menu {
@@ -203,6 +210,20 @@
             font-size: 14px;
             line-height: 20px;
             margin-bottom: 30px;
+        }
+    }
+    .result {
+        &__circle {
+            width: 100px;
+            height: 100px;
+            font-size: 23px;
+            padding-top: 33px;
+        }
+        &__text {
+            font-size: 13px;
+        }
+        &__wrapper {
+            margin-top: 40px;
         }
     }
 }

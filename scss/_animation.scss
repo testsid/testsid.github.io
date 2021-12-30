@@ -6,3 +6,8 @@
 		background-position: 100% 50%;
 	}
 }
+@keyframes rotate {
+	to {
+		transform: rotate(360deg);
+	}
+}
