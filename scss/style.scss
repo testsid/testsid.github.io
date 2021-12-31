@@ -53,6 +53,13 @@ body {
     background-size: 20px 20px;
     position: absolute;
 }
+.background__circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba($color: $orange, $alpha: .5);
+    position: absolute;
+}
 
 @import '_header';
 @import '_promo';
@@ -61,5 +68,6 @@ body {
 @import '_work';
 @import '_process';
 @import '_result';
+@import '_video';
 
 @import '_media';

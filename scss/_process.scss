@@ -46,9 +46,15 @@
         right: 0%;
         &_orange {
             background-image: radial-gradient(circle closest-corner at 20% 20%, #FCA311 50%, transparent 50%);
-            bottom: 5%;
+            bottom: 12%;
             left: 0;
             z-index: 2;
         }
+    }
+    &__btn {
+        margin: 60px auto 0;
+        font-weight: 500;
+        width: 255px;
+        height: 46px;
     }
 }

@@ -1,0 +1,49 @@
+.video {
+    padding: 160px 0;
+    &__item {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        border-bottom: 4px solid $main-color;
+        position: relative;
+    }
+    &__content {
+        max-width: 40%;
+        padding-top: 40px;
+    }
+    &__man {
+        width: 30%;
+        position: absolute;
+        bottom: 0;
+        right: -9%;
+    }
+    .company__item__title {
+        margin-top: 0;
+        margin-bottom: 30px;
+        position: relative;
+        text-align: left;
+        &::after {
+            content: '';
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: rgba($color: $orange, $alpha: .5);
+            position: absolute;
+            top: -23px;
+            left: 0;
+        }
+    }
+    .background {
+        left: -5%;
+        top: 44%;
+        
+    }
+    .process__background_orange {
+        left: 3%;
+        top: 66%;
+        width: 100px;
+        height: 100px;
+        
+    }
+}
