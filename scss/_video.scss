@@ -11,18 +11,21 @@
     &__content {
         max-width: 40%;
         padding-top: 40px;
+        margin: 0 20px;
     }
     &__man {
-        width: 30%;
+        width: 19%;
         position: absolute;
         bottom: 0;
-        right: -9%;
+        right: 50%;
+        transform: translateX(80%);
     }
     .company__item__title {
         margin-top: 0;
         margin-bottom: 30px;
         position: relative;
         text-align: left;
+        font-weight: 700;
         &::after {
             content: '';
             width: 70px;

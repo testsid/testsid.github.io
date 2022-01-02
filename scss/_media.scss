@@ -1,3 +1,6 @@
+@media screen and (max-width:1439px) {
+   
+}
 @media screen and (max-width:1024px) {
     .menu {
         &__link {
@@ -88,6 +91,16 @@
             width: 145px;
             height: 145px;
             padding-top: 43px;
+        }
+    }
+    .video {
+        &__man {
+            width: 29%;
+        }
+        .background {
+            width: 150px;
+            height: 150px;
+            top: 58%;
         }
     }
 }
@@ -224,6 +237,34 @@
         }
         &__wrapper {
             margin-top: 40px;
+        }
+    }
+    .video {
+        padding: 70px 0;
+        &__item {
+            flex-direction: column;
+        }
+        &__content {
+            max-width: 100%;
+            padding-top: 7px;
+        }
+        &__man {
+            right: 0;
+            transform: translateX(0);
+        }
+        iframe {
+            width: auto;
+            height: 300px;
+            order: 1;
+        }
+        .company__item__title {
+            margin-bottom: 7px;
+            &::after {
+                width: 40px;
+                height: 40px;
+                top: -10px;
+                
+            }
         }
     }
 }
