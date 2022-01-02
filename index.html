@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 
     <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script defer src="js/script.js"></script>
 </head>
 <body>
@@ -23,9 +24,9 @@
                    <a href="index.html"> <img src="img/logo-removebg-preview.png" alt="logo"></a>
                 </div>
                 <ul class="menu">
-                    <li class="menu__item"><a href="#" class="menu__link">О компании </a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Видео-презентация</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Проекты</a></li>
+                    <li class="menu__item"><a href="#company" class="menu__link">О компании </a></li>
+                    <li class="menu__item"><a href="#video" class="menu__link">Видео-презентация</a></li>
+                    <li class="menu__item"><a href="#projects" class="menu__link">Проекты</a></li>
                 </ul>
                 <div class="header__contacts">
                     <a href="+79965827964" class="header__phone">+7(996)-582-79-64</a>
@@ -45,7 +46,7 @@
             <div class="promo__content">
                 <h1 class="promo__h">Сопровождение исполнительной документации</h1>
             <p class="promo__subtitle">Предлагает Вам нестандартные условия программного метода формирования ИД "под ключ".</p>
-            <a href="#" class="btn promo__btn">Презентация</a>
+            <a href="#present" class="btn promo__btn">Смотреть презентацию</a>
             </div>
             <div class="promo__man"><img src="img/promo_man.png" alt="man"></div>
          </div>
@@ -68,7 +69,7 @@
            </div>
        </div>
    </section>
-   <section class="company">
+   <section class="company" >
        <div class="container">
            <p class="subtitle">О компании</p>
            <h2 class="title company__h">Чем мы отличаемся от других компаний</h2>
@@ -106,7 +107,7 @@
            </div>
        </div>
    </section>
-   <section class="work">
+   <section class="work" id="company">
        <div class="container">
            <div class="work__wrapper">
                <div class="work__photo">
@@ -143,7 +144,7 @@
            </div>
        </div>
    </section>
-   <section class="process">
+   <section class="process" id="projects">
        <div class="container">
            <p class="subtitle process__subtitle">как мы работаем</p>
            <p class="title process__title">Процесс работы на объектах</p>
@@ -191,6 +192,20 @@
   <a href="#" class="btn process__btn">Подробнее о проектах >></a>
        </div>
    </section>
+   <section class="present" id="present">
+       <div class="container">
+           <p class="subtitle">оценить наш подход к формированию ИД </p>
+           <h2 class="title">Перезентация</h2>
+           <div class="background"></div>
+           <div class="background process__background_orange"></div>
+           <div class="present__wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nAIfAGx8yss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="present__man"><img src="img/present__man.png" alt="man"></div>
+            <a href="img/comp_img1.png" class="btn present__link" download>Скачать презентацию для руководителя <span class="rot">&raquo;</span></a>
+            <a href="img/comp_img2.png" class="btn present__link" download>Скачать презентацию для сотрудников ПТО <span class="rot">&raquo;</span></a>
+           </div>
+       </div>
+   </section>
    <section class="result">
        <div class="container">
            <p class="subtitle">выгода для клиента</p>
@@ -211,7 +226,7 @@
            </div> 
        </div>
    </section>
-   <section class="video">
+   <section class="video" id="video">
        <div class="container">
             <div class="video__wrapper">
                 <div class="video__item">
@@ -265,10 +280,10 @@
                <div class="footer__menu">
                    <div class="footer__item">
                        <p class="footer__subtitle">Компания</p>
-                       <a href="#" class="footer__link">О компании</a>
-                       <a href="#" class="footer__link">Проекты</a>
-                       <a href="#" class="footer__link">Перезнтация</a>
-                       <a href="#" class="footer__link">Видео</a>
+                       <a href="#company" class="footer__link">О компании</a>
+                       <a href="#projects" class="footer__link">Проекты</a>
+                       <a href="#present" class="footer__link">Перезнтация</a>
+                       <a href="#video" class="footer__link">Видео</a>
                    </div>
                    <div class="footer__item">
                     <p class="footer__subtitle">Мы в соц.сетях</p>
@@ -290,7 +305,42 @@
            
        </div>
    </footer>
-
+   <!-- modal -->
+   <div class="overlay "></div>
+   <div class="modal " id="consultation">
+       <div class="modal__close">&times;</div>
+       <div class="modal__title">Заказать звонок</div>
+       <p class="modal__descr">Оставьте свои контактные данные, и наш специалист свяжется с Вами в ближайшее время</p>
+       <form action="#" class="modal__form">
+           <div class="modal__input__wrapper">
+               <input name="name" id="modal__name" class="modal__input" type="text" required>
+               <label for="modal__name">Ваше имя</label>
+           </div>
+           <div class="modal__input__wrapper">
+            <input name="phone" id="modal__phone" class="modal__input" type="number" required>
+            <label for="modal__phone">Ваш телефон</label>
+        </div>
+           <div class="modal__input__wrapper">
+               <input name="email" id="modal__email" class="modal__input" type="email" >
+               <label for="modal__email">Ваш e-mail</label>
+           </div>
+           
+           <div class="modal__input__wrapper">
+               <textarea name="textmessage" id="modal__textarea1" class="modal__input" ></textarea>
+               <label for="modal__textarea1">Введите сообщение</label>
+           </div>
+           <div class="policy">
+               <input required type="checkbox" checked>
+               я согласен(-на) с политикой конфиденциальности
+           </div>
+           
+           <button type="submit" class="btn">Отправить</button>
+       </form>
+   </div>
+   <div class="modal " id="thanks">
+       <div class="modal__close">&times;</div>
+       <p class="modal__descr">Спасибо за заявку!</p>
+   </div>
   <p class="link" style="font-size: 8px;"> Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a></p>
 </body>
 </html>

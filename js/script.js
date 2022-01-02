@@ -47,5 +47,12 @@ window.addEventListener('DOMContentLoaded', () => {
         loop: true,
       });
 
-     
+     //modal 
+    
+    $('#consult').on('click', function(){
+      $('.overlay, #consultation').fadeIn();
+    });
+    $('.modal__close').on('click', function(){
+      $('.overlay, #consultation, #thanks').fadeOut();
+    });
 });

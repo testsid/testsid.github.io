@@ -1,0 +1,38 @@
+.present {
+    position: relative;
+    
+    .title, .subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        text-align: center;
+        margin-top: 20px;
+    }
+    &__link {
+        display: block;
+        text-decoration: none;
+        margin: 20px auto;
+        width: 500px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rot {
+        font-size: 35px;
+        transform: rotate(90deg);
+        margin-left: 20px;
+    }
+    iframe {
+        margin: 0 auto;
+    }
+    &__man {
+        position: absolute;
+        width: 25%;
+        bottom: 0;
+        right: 0;
+        img {
+            width: 100%;
+        }
+    }
+}
