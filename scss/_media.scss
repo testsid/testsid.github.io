@@ -313,7 +313,13 @@
             display: none;
         }
         &__man {
-            left: 100%;
+            right: 0;
+        }
+        iframe {
+            width: auto;
+        }
+        &__link {
+            width: 320px;
         }
     }
 }
