@@ -6,8 +6,11 @@ header {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    &__item {
+    &__item, &__first {
         margin-left: 40px;
+        height: 90px;
+        display: flex;
+        align-items: center;
     }
     &__link {
         color: $main-color;
@@ -19,6 +22,52 @@ header {
             border-bottom: 1px solid $main-color;
             filter: drop-shadow(0px 4px 5px rgba(50, 50, 50, 0.35));
 
+        }
+    }
+}
+.submenu {
+    height: 110px;
+    display: none;
+    position: absolute;
+    background: #fff;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 200px 7px;
+    transition: all .3s;
+    z-index: 20;
+    &_active {
+        display: flex;
+    }
+    &__item {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        max-width: 120px;
+        padding: 7px;
+        &:hover {
+            outline: 1px solid rgba(19%, 19%, 19%, .5);
+        }
+        a {
+            img {
+                width: 40px;
+                margin-bottom: 5px;
+            }
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 107.4%;
+            text-align: center;
+            text-decoration: none;
+            color: $main-color;
+            
+            
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: space-between;
+            
+            
         }
     }
 }

@@ -17,7 +17,24 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    
+    //show submenu
+$('.menu__item').each(function(i) {
+  $(this).mouseenter(function(e) {
+      $('.submenu').eq(i).addClass('submenu_active');
+      });
+  $(this).mouseleave(function(e) {
+    $('.submenu').eq(i).removeClass('submenu_active');
+    });
+  });
+
+  $('.submenu').each(function(i) {
+    $(this).mouseenter(function(e) {
+        $('.submenu').eq(i).addClass('submenu_active');
+        });
+    $(this).mouseleave(function(e) {
+      $('.submenu').eq(i).removeClass('submenu_active');
+      });
+    });
 
      //modal 
     
