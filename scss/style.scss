@@ -5,73 +5,17 @@
 }
 body {
     font-family: 'Montserrat', 'Arial', sans-serif;
-    background: #FAFAFA;
+    color: #323232;
+    
 }
 .container {
     margin: 0 auto;
     width: 85%;
-    max-width: 1320px;
+    max-width: 1150px;
 }
 @import '_vari';
-@import '_animation';
-
-.btn {
-    background-color: $main-color;
-    color: #fff;
-    width: 152px;
-    height: 37px;
-    border-radius: 35px;
-    font-size: 16px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .3s;
-    &:hover {
-        color: $main-color;
-        background-color: #fff;
-        outline: 1px solid $main-color;
-    }
-}
-.title {
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 44px;
-    color: $text-color;
-    margin-top: 20px;
-}
-.subtitle {
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    color: $text-color;
-}
-.background {
-    width: 200px;
-    height: 200px;
-    background-image: radial-gradient(circle closest-corner at 20% 20%, $main-color 50%, transparent 50%);
-    background-size: 20px 20px;
-    position: absolute;
-}
-.background__circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: rgba($color: $orange, $alpha: .5);
-    position: absolute;
-}
 
 @import '_header';
 @import '_promo';
-@import '_exp';
-@import '_company';
-@import '_work';
-@import '_process';
-@import '_result';
-@import '_video';
-@import '_present';
-@import '_footer';
-@import '_modal';
-@import '_projects';
 
-@import '_media';
+

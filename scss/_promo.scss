@@ -1,85 +1,39 @@
 .promo {
-   
-    &__wrapper {
-        position: relative;
-        overflow: hidden;
-        background: linear-gradient(
-		-45deg,
-		#bec3e9,
-		#100552,
-		#bec3e9,
-		#100552,
-		#927f84,
-		#bedfb1,
-		#bec3e9,
-		#100552
-	);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	animation-direction: alternate;
-	height: calc(100vh - 177px);
-    border-radius: 35px;
-    display: flex;
-    justify-content: space-between;
-    }
+    background: url(../img/promo_bg.png) no-repeat center;
+    height: calc(100vh - 140px);
+   background-size: cover;
+   padding-top: 78px;
+   position: relative;
    &__h {
-    font-weight: bold;
-    font-size: 50px;
-    line-height: 61px;
-    color: #FFFFFF;
-    margin-bottom: 22px;
+      width: 644px;
+       font-weight: 500;
+       font-size: 42px;
+       line-height: 110%;
+       margin-left: 62px;
    }
    &__subtitle {
+    font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    color: #FFFFFF;
-    font-weight: 300;
-   }
-   &__btn {
-       color: $main-color;
-       background-color: #fff;
-       font-weight: 700;
-       margin-top: 30px;
-       width: 245px;
-       height: 50px;
-       &:hover {
-           color: #fff;
-           background-color: $main-color;
-       }
-   }
-   &__content {
-       width: 37%;
-       display: flex;
-       flex-direction: column;
-       padding-top: 70px;
-       margin-left: 73px;
-   }
-   &__man {
-       width: 50%;
-       overflow: hidden;
-       position: relative;
-       img {
-           width: 80%;
-       
-        object-fit: contain;
-        position: absolute;
-        display: block;
-        right: -5%;
-        bottom: 0;
-       }
+    width: 606px;
+    margin-top: 20px;
+    margin-left: 62px;
    }
    &__slogan {
-       background: url(../img/slogan_bg.svg) no-repeat center, $main-color;
-       background-size: cover;
-       font-weight: 500;
-       font-size: 28px;
-       line-height: 34px;
-        color: #fff;
-        text-align: center;
-        border-radius: 35px;
-        padding: 30px 150px;
-        transform: translateY(-45%);
-        width: 85%;
-        margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px #0155B3;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 110%;
+    text-align: center;
+    padding: 27px 144px;
+    color: #002248;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    span {
+        text-decoration: underline;
+    }
    }
 }
