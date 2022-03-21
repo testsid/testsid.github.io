@@ -76,6 +76,7 @@
         height: 60px;
     }
     .promo {
+        height: calc(100vh - 200px);
         &__h {
             width: auto;
             font-size: 26px;
