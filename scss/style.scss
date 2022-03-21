@@ -13,10 +13,38 @@ body {
     width: 85%;
     max-width: 1150px;
 }
+
 @import '_vari';
+
+.title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+.btn {
+    display: block;
+    padding: 15px 25px;
+    background: transparent;
+    outline: 1px solid #002248;
+    border-radius: 5px;
+    border: none;
+    margin: 50px auto;
+    font-weight: 500;
+    font-size: 14px;
+
+    &:hover {
+        background: $main-color;
+        outline: none;
+        cursor: pointer;
+        color: #fff;
+    }
+    
+}
 
 @import '_header';
 @import '_promo';
+@import '_calc';
 
 @import '_media.scss';
 

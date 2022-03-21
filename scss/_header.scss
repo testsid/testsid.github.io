@@ -6,7 +6,7 @@ header {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    // position: relative;
     &__item, &__first {
         margin-left: 40px;
         height: 90px;
@@ -28,6 +28,7 @@ header {
 }
 .submenu {
     height: 110px;
+   
     display: none;
     position: absolute;
     background: #fff;
@@ -40,6 +41,7 @@ header {
     z-index: 20;
     &_active {
         display: flex;
+        
     }
     &__item {
         display: flex;

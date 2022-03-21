@@ -44,4 +44,7 @@ $('.menu__item').each(function(i) {
     $('.modal__close').on('click', function(){
       $('.overlay, #consultation, #thanks').fadeOut();
     });
+
+    
+
 });
