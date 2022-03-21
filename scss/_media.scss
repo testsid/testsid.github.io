@@ -1,0 +1,90 @@
+@media screen and (max-width:1023px) {
+    .logo {
+        img {
+            width: 120px;
+        }
+    }
+    .menu {
+        &__link {
+            font-size: 14px;
+        }
+    }
+    .promo {
+        &__h {
+            font-size: 32px;
+            width: 611px;
+        }
+        &__subtitle {
+            font-size: 14px;
+            line-height: 16px;
+            width: 515px;
+            margin-top: 10px;
+        }
+        &__slogan {
+            padding: 20px 44px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hamburger {
+        display: flex;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        
+        position: absolute;
+        top: 0;
+        right: -100%;
+        z-index: 3;
+        background: rgba($color: $main-color, $alpha: .85);
+        padding: 20px 30px;
+        width: 50%;
+        &__link {
+            color: #fff;
+        }
+        &__item, &__first {
+            margin-left: 0;
+        }
+        &_active {
+            right: 0;
+        }
+        
+    }
+    .submenu {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        top: 0;
+        padding: 0;
+        background: transparent;
+        
+        &__item {
+            img {
+                display: none;
+            }
+            a {
+                color: #fff;
+            }
+        }
+    }
+    header {
+        height: 60px;
+    }
+    .promo {
+        &__h {
+            width: auto;
+            font-size: 26px;
+        }
+        &__subtitle {
+            width: auto;
+            font-size: 12px;
+        }
+        &__slogan {
+            font-size: 14px;
+        }
+    }
+}
