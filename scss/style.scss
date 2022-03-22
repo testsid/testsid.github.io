@@ -32,6 +32,7 @@ body {
     margin: 50px auto;
     font-weight: 500;
     font-size: 14px;
+    width: fit-content;
 
     &:hover {
         background: $main-color;
@@ -41,10 +42,21 @@ body {
     }
     
 }
+.title__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.divider {
+    width: 30%;
+    height: 2px;
+    background: $main-color;
+}
 
 @import '_header';
 @import '_promo';
 @import '_calc';
+@import '_win';
 
 @import '_media.scss';
 

@@ -123,15 +123,15 @@
                 </div>
                 <div class="calc__item">
                     <div class="calc__name">Количество месяцев от начала СМР до сдачи ИД в архив</div>
-                    <input type="number">
+                    <input id="mes" type="number">
                 </div>
                 <div class="calc__item">
                     <div class="calc__name">Cреднее количество специалистов  строительства</div>
-                    <input type="number">
+                    <input id="spec" type="number">
                 </div>
                 <div class="calc__item">
                     <div class="calc__name">Затраты на одного специалиста в месяц в т.ч.  прочие расходы</div>
-                    <input type="number">
+                    <input id="expenses" type="number">
                 </div>
                 <div class="calc__item">
                     
@@ -140,16 +140,57 @@
                         <option>Масса конструктива, сданная в архив (тн)</option>
                         <option>Количество линий, сданных в архив (шт)</option>
                     </select>
-                    <input type="number">
+                    <input id="volume" type="number">
                 </div>
                 <div class="calc__item">
                     <div class="calc__name">Оставшийся объем работ, не сданный в архив</div>
-                    <input type="number">
+                    <input id="ostatki" type="number">
                 </div>
             </div>
-            <button type="submit" class="btn">Произвести анализ</button>
+            <div class="btn" id="calcTrigger">Произвести анализ</div>
+            <div class="calc__result"></div>
         </form>
     </div>
+  </section>
+  <section class="win">
+      <div class="container">
+          <div class="title__wrap">
+              <div class="divider"></div>
+                <h2 class="title">Наши преимущества</h2>
+                <div class="divider"></div>
+          </div>
+         <div class="win__wrapper">
+             <div class="win__item">
+                 <div class="win__img">
+                     <img src="img/win1.png" alt="win">
+                 </div>
+                 <p class="win__title">Единственная услуга на рынке</p>
+                 <p class="win__subtitle">Мы работаем на результат</p>
+             </div>
+             <div class="win__item">
+                <div class="win__img">
+                    <img src="img/win2.png" alt="win">
+                </div>
+                <p class="win__title">Не затягиваем процесс формирования ИД</p>
+                <p class="win__subtitle">Максимально стараемся минимизировать ваши затраты</p>
+            </div>
+            <div class="win__item">
+                <div class="win__img">
+                    <img src="img/win3.png" alt="win">
+                </div>
+                <p class="win__title">Проявляем гибкость в условиях договора</p>
+                <p class="win__subtitle">Все объекты строительства по-своему уникальны и требуют отдельного подхода к условиям договора.</p>
+            </div>
+            <div class="win__item">
+                <div class="win__img">
+                    <img src="img/win4.png" alt="win">
+                </div>
+                <p class="win__title">Современный подход к решению вопросов</p>
+                <p class="win__subtitle">Используем собственные уникальные разработки и новейшие программы в работе</p>
+            </div>
+         </div>
+          
+      </div>
   </section>
 </body>
 </html>

@@ -38,6 +38,15 @@
             margin-top: 30px;
         }
     }
+    .win {
+        &__title {
+            font-size: 14px;
+            line-height: 13px;
+        }
+        &__subtitle {
+            font-size: 10px;
+        }
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -127,5 +136,34 @@
         padding: 7px 14px;
         font-size: 12px;
         margin-top: 20px;
+    }
+    .win {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__img {
+            img {
+                width: 60%;
+            }
+        }
+        &__item {
+            width: 50%;
+        }
+    }
+}
+@media screen and (max-width:424px) {
+    .win {
+        &__wrapper {
+            justify-content: center;
+        }
+        &__item {
+            width: 90%;
+            margin-top: 25px;
+        }
+        &__img {
+            img {
+                width: 50%;
+            }
+        }
     }
 }
