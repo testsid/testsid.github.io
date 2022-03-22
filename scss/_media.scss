@@ -1,3 +1,26 @@
+@media print {
+    header, .promo, .win {
+        display: none;
+    }
+    .title {
+        font-size: 14px;
+    }
+    .btn {
+        display: none;
+    }
+    .calc {
+        &__name {
+            font-size: 10px;
+        }
+    }
+    .table {
+        margin-top: 30px;
+        &__text {
+            font-size: 10px;
+        }
+    }
+}
+
 @media screen and (max-width:1023px) {
     .logo {
         img {

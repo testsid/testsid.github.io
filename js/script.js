@@ -95,6 +95,42 @@ $('.menu__item').each(function(i) {
       table.appendChild(tableCost2);
       table.appendChild(tableText3);
       table.appendChild(tableVirabotka);
+
+      //условие для прогноза
+
+      if (ostatki > 0) {
+        console.log('ok');
+        //создаем прогнозную таблицу
+        let prognoz = document.createElement('div'), 
+            table2 = document.createElement('div'),
+            table2Text1 = document.createElement('div'),
+            table2Cost = document.createElement('div'),
+            table2Text2 = document.createElement('div'),
+            table2Cost2 = document.createElement('div');
+
+        //добавляем классы созданным элементам
+            prognoz.classList.add('win__title');
+            table2.classList.add('table'); 
+            table2Text1.classList.add('table__text');
+            table2Cost.classList.add('table__numbers');
+            table2Text2.classList.add('table__text');
+            table2Cost2.classList.add('table__numbers');
+
+        //заполняем таблицу
+            prognoz.textContent = 'Прогноз';
+            table2Text1.textContent = 'стоимости оставшегося объема работ составляет';
+            table2Text2.textContent = 'временных затрат (ед.изм 1 месяц)';
+            table2Cost.innerHTML = tableCost2Result*ostatki;
+            table2Cost2.innerHTML = ostatki/tableVirabotkaResult/spec;
+
+        //выводим таблицу
+            result.appendChild(prognoz); 
+            result.appendChild(table2); 
+            table2.appendChild(table2Text1);
+            table2.appendChild(table2Cost);
+            table2.appendChild(table2Text2);
+            table2.appendChild(table2Cost2);
+      } 
       
     });
 
