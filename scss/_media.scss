@@ -1,5 +1,5 @@
 @media print {
-    header, .promo, .win {
+    header, .promo, .win, .serv {
         display: none;
     }
     .title {
@@ -68,6 +68,26 @@
         }
         &__subtitle {
             font-size: 10px;
+        }
+    }
+    .serv {
+        &__wrapper {
+            margin-top: 30px;
+        }
+        &__item {
+            padding: 20px;
+            height: 150px;
+        }
+        &__img {
+            width: 35px;
+        }
+        &__title {
+            font-size: 14px;
+            width: 80%;
+        }
+        &__img {
+            left: 20px;
+            bottom: 20px;
         }
     }
 }
@@ -172,6 +192,12 @@
         &__item {
             width: 50%;
         }
+    }
+    .serv {
+        &__item {
+            width: 70%;
+        }
+        
     }
 }
 @media screen and (max-width:424px) {

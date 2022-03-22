@@ -1,0 +1,38 @@
+.serv {
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+    &__item {
+        width: 30%;
+        height: 220px;
+        background: linear-gradient(71.41deg, rgba(1, 85, 179, 0.2) -0.22%, rgba(255, 255, 255, 0.2) 96.3%);
+        border: 1px solid #0155B3;
+        padding: 43px;
+        position: relative;
+        margin: 20px 15px;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0px 4px 20px #0155B3;
+        }
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: right;
+        width: 70%;
+        margin-left: auto;
+    }
+    &__img {
+        width: 70px;
+        position: absolute;
+        bottom: 43px;
+        left: 43px;
+        img {
+            width: 100%;
+        }
+    }
+}
