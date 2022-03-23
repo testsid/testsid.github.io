@@ -199,6 +199,12 @@
         }
         
     }
+    .table {
+        width: 100%;
+        &__text {
+            font-size: 10px;
+        }
+    }
 }
 @media screen and (max-width:424px) {
     .win {

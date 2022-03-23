@@ -52,6 +52,12 @@ body {
     height: 2px;
     background: $main-color;
 }
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    margin-top: 15px;
+}
 
 @import '_header';
 @import '_promo';

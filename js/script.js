@@ -65,8 +65,8 @@ $('.menu__item').each(function(i) {
           tableText3 = document.createElement('div'),
           tableVirabotka = document.createElement('div'),
           tableCostResult = spec*mes*expenses,
-          tableCost2Result = tableCostResult/volume,
-          tableVirabotkaResult = volume/spec/mes;
+          tableCost2Result = (tableCostResult/volume).toFixed(2),
+          tableVirabotkaResult = (volume/spec/mes).toFixed(0);
 
 
       //добавляем классы созданным элементам
@@ -121,7 +121,7 @@ $('.menu__item').each(function(i) {
             table2Text1.textContent = 'стоимости оставшегося объема работ составляет';
             table2Text2.textContent = 'временных затрат (ед.изм 1 месяц)';
             table2Cost.innerHTML = tableCost2Result*ostatki;
-            table2Cost2.innerHTML = ostatki/tableVirabotkaResult/spec;
+            table2Cost2.innerHTML = (ostatki/tableVirabotkaResult/spec).toFixed(2);
 
         //выводим таблицу
             result.appendChild(prognoz); 
@@ -133,5 +133,19 @@ $('.menu__item').each(function(i) {
       } 
       
     });
+
+    //serv modal
+    $('.serv__item').each(function(i) {
+      $(this).on('click', function() {
+        $('.overlay').fadeIn();
+        $('.serv__modal').eq(i).fadeIn();
+        $('.serv__modal__close, .overlay, .serv__btn').on('click', function() {
+          $('.serv__modal, .overlay').fadeOut();
+        });
+      });
+    });
+
+
+    
 
 });
