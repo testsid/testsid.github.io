@@ -21,6 +21,18 @@
     }
 }
 
+@media screen and (max-width:1110px) {
+    .serv {
+        &__modal {
+            width: 100%;
+            transform: translate(0, 0);
+            top: 0;
+            left: 0;
+           
+        }
+    }
+}
+
 @media screen and (max-width:1023px) {
     .logo {
         img {
@@ -204,6 +216,19 @@
         &__text {
             font-size: 10px;
         }
+    }
+    .serv {
+        &__modal {
+            &__img {
+                display: none;
+            }
+            &__content {
+                width: 100%;
+            }
+        }
+    }
+    .text {
+        font-size: 12px;
     }
 }
 @media screen and (max-width:424px) {

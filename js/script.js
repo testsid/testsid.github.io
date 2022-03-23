@@ -145,6 +145,17 @@ $('.menu__item').each(function(i) {
       });
     });
 
+    $('.serv__item_menu').each(function(i) {
+      $(this).on('click', function() {
+        $('.submenu').removeClass('submenu_active');
+        $('.overlay').fadeIn();
+        $('.serv__modal').eq(i).fadeIn();
+        $('.serv__modal__close, .overlay, .serv__btn').on('click', function() {
+          $('.serv__modal, .overlay').fadeOut();
+        });
+      });
+    });
+
 
     
 
