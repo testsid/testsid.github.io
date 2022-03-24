@@ -21,6 +21,7 @@ body {
     font-size: 24px;
     line-height: 29px;
     text-align: center;
+    margin: 0 20px;
 }
 .btn {
     display: block;
@@ -48,7 +49,7 @@ body {
     justify-content: space-between;
 }
 .divider {
-    width: 30%;
+   flex-grow: 2;
     height: 2px;
     background: $main-color;
 }
@@ -64,6 +65,7 @@ body {
 @import '_calc';
 @import '_win';
 @import '_serv';
+@import '_result';
 
 @import '_media.scss';
 
