@@ -331,6 +331,22 @@
             min-width: 100px;
         }
     }
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            text-align: center;
+        }
+        &__title {
+            margin-top: 20px;
+        }
+        &__link {
+            margin-bottom: 10px;
+            
+        }
+    }
 }
 @media screen and (max-width:424px) {
     .win {
