@@ -45,6 +45,37 @@ $('.menu__item').each(function(i) {
       $('.overlay, #consultation, #thanks').fadeOut();
     });
 
+    //modal contacts
+    $('#contacts').on('click', function(){
+      $('.modal__contacts, .overlay').fadeIn();
+    });
+      $('.modal__contacts__close, .overlay').on('click', function(){
+        $('.modal__contacts, .overlay').fadeOut();
+      });
+
+      //serv modal
+    $('.serv__item').each(function(i) {
+      $(this).on('click', function() {
+        $('.overlay').fadeIn();
+        $('.serv__modal').eq(i).fadeIn();
+        $('.serv__modal__close, .overlay, .serv__btn').on('click', function() {
+          $('.serv__modal, .overlay').fadeOut();
+        });
+      });
+    });
+
+    $('.serv__item_menu').each(function(i) {
+      $(this).on('click', function() {
+        $('.submenu').removeClass('submenu_active');
+        $('.overlay').fadeIn();
+        $('.serv__modal').eq(i).fadeIn();
+        $('.serv__modal__close, .overlay, .serv__btn').on('click', function() {
+          $('.serv__modal, .overlay').fadeOut();
+        });
+      });
+    });
+
+    
     //calc 
     let btn = document.getElementById('calcTrigger');
 
@@ -134,35 +165,9 @@ $('.menu__item').each(function(i) {
       
     });
 
-    //serv modal
-    $('.serv__item').each(function(i) {
-      $(this).on('click', function() {
-        $('.overlay').fadeIn();
-        $('.serv__modal').eq(i).fadeIn();
-        $('.serv__modal__close, .overlay, .serv__btn').on('click', function() {
-          $('.serv__modal, .overlay').fadeOut();
-        });
-      });
-    });
+    
 
-    $('.serv__item_menu').each(function(i) {
-      $(this).on('click', function() {
-        $('.submenu').removeClass('submenu_active');
-        $('.overlay').fadeIn();
-        $('.serv__modal').eq(i).fadeIn();
-        $('.serv__modal__close, .overlay, .serv__btn').on('click', function() {
-          $('.serv__modal, .overlay').fadeOut();
-        });
-      });
-    });
-
-    //modal contacts
-    $('#contacts').on('click', function(){
-      $('.modal__contacts, .overlay').fadeIn();
-    });
-      $('.modal__contacts__close, .overlay').on('click', function(){
-        $('.modal__contacts, .overlay').fadeOut();
-      })
+    
    
 
 
