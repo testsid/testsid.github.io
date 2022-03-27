@@ -59,6 +59,9 @@ body {
     line-height: 120%;
     margin-top: 15px;
 }
+.remove {
+    display: none;
+}
 
 @import '_header';
 @import '_promo';
