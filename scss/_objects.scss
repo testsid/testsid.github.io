@@ -1,0 +1,41 @@
+.objects {
+    padding-bottom: 40px;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    &__wrap {
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 5px;
+        padding: 10px;
+    }
+    &__item {
+        width: 40%;
+        margin: 40px 25px 0;
+        padding: 102px 56px 19px;
+        box-shadow: 0px 4px 10px #0155B3;
+        &:nth-child(1) {
+            background: url(../img/object1.png) no-repeat center;
+            background-size: cover;
+        }
+        &:nth-child(2) {
+            background: url(../img/object2.png) no-repeat center;
+            background-size: cover;
+        }
+        &:nth-child(3) {
+            background: url(../img/object3.png) no-repeat center;
+            background-size: cover;
+        }
+        &:nth-child(4) {
+            background: url(../img/object4.png) no-repeat center;
+            background-size: cover;
+        }
+        
+    }
+    .text {
+        text-align: center;
+        font-weight: 500;
+    }
+}

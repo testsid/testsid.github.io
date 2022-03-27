@@ -156,7 +156,51 @@ $('.menu__item').each(function(i) {
       });
     });
 
+    //modal contacts
+    $('#contacts').on('click', function(){
+      $('.modal__contacts, .overlay').fadeIn();
+    });
+      $('.modal__contacts__close, .overlay').on('click', function(){
+        $('.modal__contacts, .overlay').fadeOut();
+      })
+   
+
+
+
 
     
 
 });
+//единицы измерения в калькуляторе
+$('#tonna, #lini, #edin').hide();
+function price(obj) {
+  if(obj.value == "tonna") {
+    $('#metr').hide();
+    $('#lini').hide();
+    $('#edin').hide();
+    $('#tonna').show();
+  }
+  
+  if(obj.value == "lini") {
+    $('#metr').hide();
+    $('#tonna').hide();
+    $('#edin').hide();
+    $('#lini').show();
+    
+  }
+  if(obj.value == "edin") {
+    $('#metr').hide();
+    $('#tonna').hide();
+    $('#lini').hide();
+    $('#edin').show();
+  }
+  if(obj.value == "metr") {
+    $('#edin').hide();
+    $('#tonna').hide();
+    $('#lini').hide();
+    $('#metr').show();
+  }
+  
+  
+  
+}

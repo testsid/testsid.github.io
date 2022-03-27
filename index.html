@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -67,24 +67,24 @@
                     <li class="menu__item"><a href="#" class="menu__link" >Объекты</a></li>
                     <li class="submenu">
                         <div class="submenu__item">
-                            <a href="#" class="submenu__link"><img src="img/object1.svg" alt="service">Завершенные проекты</a>
+                            <a href="objects.html" class="submenu__link"><img src="img/object1.svg" alt="service">Завершенные проекты</a>
                         </div>
                         <div class="submenu__item">
-                            <a href="#" class="submenu__link"><img src="img/object2.svg" alt="service">В стадии реализации</a>
+                            <a href="objects2.html" class="submenu__link"><img src="img/object2.svg" alt="service">В стадии реализации</a>
                         </div>
                         
                     </li>
                     <li class="menu__item"><a href="#" class="menu__link" >Компания</a></li>
                     <li class="submenu">
                         <div class="submenu__item">
-                            <a href="#" class="submenu__link"><img src="img/company.svg" alt="service">О компании</a>
+                            <a href="company.html" class="submenu__link"><img src="img/company.svg" alt="service">О компании</a>
                         </div>
                         <div class="submenu__item">
-                            <a href="#" class="submenu__link"><img src="img/vac.svg" alt="service">Наши вакансии</a>
+                            <a href="vac.html" class="submenu__link"><img src="img/vac.svg" alt="service">Наши вакансии</a>
                         </div>
                         
                     </li>
-                    <li class="menu__item"><a href="#" class="menu__link" >Контакты</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link" id="contacts">Контакты</a></li>
                 </ul>
 
                 
@@ -95,6 +95,24 @@
                     <span></span>
                 </div>
            </div>
+       </div>
+       <!-- modal contacts -->
+       <div class="modal__contacts">
+           <div class="modal__contacts__close">&times;</div>
+          <div class="contacts__wrapper">
+              <div class="contacts__content">
+                <p class="title">Контакты</p>
+                <a href="+79965827964" class="contacts__link"><img src="img/cont_phone.svg" alt="phone">+7(996)-582-79-64</a>
+                <a href="mailto:info@ooo-sid.ru" class="contacts__link"><img src="img/cont_email.svg" alt="phone">info@ooo-sid.ru</a>
+                <a href="#" class="contacts__link"><img src="img/cont_telegram.svg" alt="phone">telegram</a>
+                <a href="https://goo.gl/maps/sBAsBtU9vJBRwh2F9" class="contacts__link" target="_blank" rel="noopener noreferrer"><img src="img/contacts_place.svg" alt="phone">г. Уфа, ул.50 лет СССР, 48/1</a>
+
+              </div>
+              <div class="contacts__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2302.9729832521666!2d56.023124517443854!3d54.74527780000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43d939909e262615%3A0x178824ec77c90a53!2z0YPQuy4gNTAg0LvQtdGCINCh0KHQodCgLCA0OC8xLCDQo9GE0LAsINCg0LXRgdC_LiDQkdCw0YjQutC-0YDRgtC-0YHRgtCw0L0sIDQ1MDA3MQ!5e0!3m2!1sru!2sru!4v1648406877317!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+
        </div>
    </header>
   <section class="promo">
@@ -112,39 +130,41 @@
             <div class="calc__wrapper">
                 <div class="calc__item">
                     <div class="calc__name">Выберите раздел проекта</div>
-                    <select>
-                        <option ></option>
-                        <option>Конструкции железобетонные</option>
-                        <option>Конструкции металлические</option>
-                        <option>Технологические трубопроводы</option>
-                        <option>Шифр РД на общестроительные работы</option>
+                    <select id="select_ed" onchange="price(this)">
+                        <option selected disabled >Конструкции железобетонные</option>
+                        <option value="metr">Конструкции железобетонные</option>
+                        <option value="tonna">Конструкции металлические</option>
+                        <option value="lini">Технологические трубопроводы</option>
+                        <option value="edin">Шифр РД на общестроительные работы</option>
                        
                     </select>
                 </div>
                 <div class="calc__item">
                     <div class="calc__name">Количество месяцев от начала СМР до сдачи ИД в архив</div>
-                    <input id="mes" type="number">
+                    <input id="mes" type="number" placeholder="5">
                 </div>
                 <div class="calc__item">
                     <div class="calc__name">Cреднее количество специалистов  строительства</div>
-                    <input id="spec" type="number">
+                    <input id="spec" type="number" placeholder="5">
                 </div>
                 <div class="calc__item">
-                    <div class="calc__name">Затраты на одного специалиста в месяц в т.ч.  прочие расходы</div>
-                    <input id="expenses" type="number">
+                    <div class="calc__name">Затраты на одного специалиста в месяц, в т.ч.  прочие расходы, т.р.</div>
+                    <input id="expenses" type="number" placeholder="300000">
                 </div>
                 <div class="calc__item">
                     
-                    <select class="calc__name">
-                        <option>Объем конструкции, сданной в архив (м3)</option>
-                        <option>Масса конструктива, сданная в архив (тн)</option>
-                        <option>Количество линий, сданных в архив (шт)</option>
-                    </select>
-                    <input id="volume" type="number">
+                    
+                    <div class="calc__name" id="metr" >Объем конструкции, сданной в архив (м3)</div>
+                    <div class="calc__name" id="tonna" >Масса конструктива, сданная в архив (тн)</div>
+                    <div class="calc__name" id="lini" >Количество линий, сданных в архив (шт)</div>
+                    <div class="calc__name" id="edin" >Количество единиц, сданных в архив (шт)</div>
+
+                   
+                    <input id="volume" type="number" placeholder="200">
                 </div>
                 <div class="calc__item">
                     <div class="calc__name">Оставшийся объем работ, не сданный в архив</div>
-                    <input id="ostatki" type="number">
+                    <input id="ostatki" type="number" placeholder="150">
                 </div>
             </div>
             <div class="btn" id="calcTrigger">Произвести анализ</div>
@@ -628,7 +648,7 @@
                   <p class="footer__title">Контакты</p>
                   <a href="+79965827964" class="footer__link"><img src="img/phone.svg" alt="phone">+7(996)-582-79-64</a>
                   <a href="mailto:info@ooo-sid.ru" class="footer__link"><img src="img/mail.svg" alt="phone">info@ooo-sid.ru</a>
-                  <a href="#" class="footer__link"><img src="img/place.svg" alt="phone">г. Уфа</a>
+                  <a href="https://goo.gl/maps/sBAsBtU9vJBRwh2F9" class="footer__link" target="_blank" rel="noopener noreferrer"><img src="img/place.svg" alt="phone">г. Уфа, ул.50 лет СССР, 48/1</a>
               </div>
               <div class="footer__item">
                 <p class="footer__title">Мы в соц.сетях</p>
@@ -640,8 +660,8 @@
                 <p class="footer__title">Меню</p>
                 <a href="#service" class="footer__link">Услуги</a>
                 
-                <a href="#" class="footer__link">Объекты</a>
-                <a href="#" class="footer__link">Компания</a>
+                <a href="objects.html" class="footer__link">Объекты</a>
+                <a href="company.html" class="footer__link">Компания</a>
             </div>
           </div>
       </div>

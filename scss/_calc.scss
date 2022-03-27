@@ -20,6 +20,7 @@
         select, input {
             width: 90%;
             height: 25px;
+            padding: 0 0 0 5px;
         }
     }
    
@@ -33,6 +34,7 @@
     .win__title {
         margin-top: 20px;
     }
+    
 }
 .table {
     display: flex;

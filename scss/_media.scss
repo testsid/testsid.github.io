@@ -161,6 +161,26 @@
         width: 36px;
     }
    }
+   .company {
+       .text {
+        width: 60%;
+        
+        font-size: 14px;
+       }
+   }
+   .objects {
+       &__wrapper {
+           margin-top: 0;
+       }
+    &__item {
+        padding: 65px 10px 19px
+   }
+   }
+   .contacts {
+       &__content {
+           width: 180px;
+       }
+   }
 }
 
 @media screen and (max-width:767px) {
@@ -345,6 +365,39 @@
         &__link {
             margin-bottom: 10px;
             
+        }
+    }
+    .company {
+        &__wrapper {
+            display: block;
+            padding-top: 30px;
+        }
+        .text {
+            width: 90%;
+            font-size: 13px;
+        }
+        .title {
+            margin: 0;
+        }
+    }
+    .objects {
+        &__item {
+            width: 300px;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            display: block;
+        }
+        &__content {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        &__map {
+            width: 100%;
+        }
+        &__link {
+            margin-top: 20px;
         }
     }
 }

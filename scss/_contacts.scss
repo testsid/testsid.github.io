@@ -1,0 +1,59 @@
+.modal__contacts {
+    padding: 40px 30px 20px;
+        position: fixed;
+       width: 80%;
+       max-width: 1000px;
+        height: auto;
+        background: #fff;
+        display: none;
+        z-index: 11;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow-y: auto;
+        
+        background: #fff;
+        
+        &__close {
+            position: absolute;
+            font-size: 44px;
+            top: 0px;
+            right: 10px;
+            font-weight: 500;
+            cursor: pointer;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    
+}
+.contacts {
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+
+    }
+    &__content {
+        margin-right: 50px;
+        width: 40%;
+    }
+    &__link {
+        color: #323232;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+        img {
+            margin-right: 5px;
+        }
+    }
+    &__map {
+        width: 60%;
+        iframe {
+            width: 100%;
+        }
+    }
+}
