@@ -2,6 +2,14 @@ header {
     height: 90px;
     background: #fff;
 }
+.logo {
+    a {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}
 .menu {
     list-style-type: none;
     display: flex;
@@ -112,4 +120,7 @@ header {
         align-items: center;
     }
 
+}
+.print__phone {
+    display: none;
 }

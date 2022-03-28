@@ -1,14 +1,24 @@
 @media print {
-    header, .promo, .win, .serv {
+   .promo, .menu, .win, .serv, .result, .exp, footer {
         display: none;
+    }
+    .print__phone {
+        display: block;
+    }
+    .logo {
+        width: 120px;
     }
     .title {
         font-size: 14px;
+    }
+    .text {
+        font-size: 10px;
     }
     .btn {
         display: none;
     }
     .calc {
+        padding-top: 0;
         &__name {
             font-size: 10px;
         }

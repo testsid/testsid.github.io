@@ -86,7 +86,8 @@ $('.menu__item').each(function(i) {
           expenses = document.getElementById('expenses').value,
           volume = document.getElementById('volume').value,
           ostatki = document.getElementById('ostatki').value,
-          result = document.querySelector('.calc__result');
+          slogan = document.querySelector('.calc__slogan'),
+          result = document.querySelector('.calc__result'); //нужно для того, чтобы вставить таблицу в этот элемент
 
       //создаем таблицу
       let table = document.createElement('div'),
@@ -97,8 +98,10 @@ $('.menu__item').each(function(i) {
           tableText3 = document.createElement('div'),
           tableVirabotka = document.createElement('div'),
           tableCostResult = spec*mes*expenses,
-          tableCost2Result = (tableCostResult/volume).toFixed(2),
-          tableVirabotkaResult = (volume/spec/mes).toFixed(0);
+          tableCost2Result = (tableCostResult/volume),
+          tableVirabotkaResult = (volume/spec/mes).toFixed(4);
+          
+
 
 
       //добавляем классы созданным элементам
@@ -112,10 +115,10 @@ $('.menu__item').each(function(i) {
 
       //заполняем таблицу
       tableText1.textContent = 'За указанный период стоимость затрат на комплекс оформления исполнительной документации соствляет';
-      tableText2.textContent = 'Стоимость 1 м3 составляет';
+      tableText2.textContent = 'Стоимость 1 единицы измерения составляет';
       tableText3.textContent = 'Средняя выработка одного специалиста в месяц составляет';
-      tableCost.innerHTML = tableCostResult;
-      tableCost2.innerHTML = tableCost2Result;
+      tableCost.innerHTML = (tableCostResult).toLocaleString('ru'); //делим числа на разряды
+      tableCost2.innerHTML = (tableCost2Result).toLocaleString('ru');
       tableVirabotka.innerHTML = tableVirabotkaResult;
       
 
@@ -131,7 +134,7 @@ $('.menu__item').each(function(i) {
       //условие для прогноза
 
       if (ostatki > 0) {
-        console.log('ok');
+        
         //создаем прогнозную таблицу
         let prognoz = document.createElement('div'), 
             table2 = document.createElement('div'),
@@ -152,7 +155,7 @@ $('.menu__item').each(function(i) {
             prognoz.textContent = 'Прогноз';
             table2Text1.textContent = 'стоимости оставшегося объема работ составляет';
             table2Text2.textContent = 'временных затрат (ед.изм 1 месяц)';
-            table2Cost.innerHTML = tableCost2Result*ostatki;
+            table2Cost.innerHTML = (tableCost2Result*ostatki).toLocaleString();
             table2Cost2.innerHTML = (ostatki/tableVirabotkaResult/spec).toFixed(2);
 
         //выводим таблицу
@@ -165,6 +168,8 @@ $('.menu__item').each(function(i) {
       } 
       btn.classList.add('remove');
       btn2.classList.remove('remove');
+      slogan.classList.remove('remove');
+
     });
     btn2.addEventListener('click', function(){
       document.querySelector('.table').remove();
@@ -185,8 +190,9 @@ $('.menu__item').each(function(i) {
           tableText3 = document.createElement('div'),
           tableVirabotka = document.createElement('div'),
           tableCostResult = spec*mes*expenses,
-          tableCost2Result = (tableCostResult/volume).toFixed(2),
-          tableVirabotkaResult = (volume/spec/mes).toFixed(0);
+          tableCost2Result = (tableCostResult/volume),
+          tableVirabotkaResult = (volume/spec/mes).toFixed(4);
+         
 
 
       //добавляем классы созданным элементам
@@ -200,10 +206,10 @@ $('.menu__item').each(function(i) {
 
       //заполняем таблицу
       tableText1.textContent = 'За указанный период стоимость затрат на комплекс оформления исполнительной документации соствляет';
-      tableText2.textContent = 'Стоимость 1 м3 составляет';
+      tableText2.textContent = 'Стоимость 1 единицы измерения составляет';
       tableText3.textContent = 'Средняя выработка одного специалиста в месяц составляет';
-      tableCost.innerHTML = tableCostResult;
-      tableCost2.innerHTML = tableCost2Result;
+      tableCost.innerHTML = (tableCostResult).toLocaleString('ru');
+      tableCost2.innerHTML = (tableCost2Result).toLocaleString('ru');
       tableVirabotka.innerHTML = tableVirabotkaResult;
       
 
@@ -219,7 +225,7 @@ $('.menu__item').each(function(i) {
       //условие для прогноза
 
       if (ostatki > 0) {
-        console.log('ok');
+        
         //создаем прогнозную таблицу
         let prognoz = document.createElement('div'), 
             table2 = document.createElement('div'),

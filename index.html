@@ -86,7 +86,9 @@
                     </li>
                     <li class="menu__item"><a href="#" class="menu__link" id="contacts">Контакты</a></li>
                 </ul>
-
+                <p class="menu__link print__phone">ooo-sid.ru</p>
+                <p class="menu__link print__phone">+7(996) 582-79-64</p>
+                
                 
                 
                 <div class="hamburger">
@@ -102,8 +104,9 @@
           <div class="contacts__wrapper">
               <div class="contacts__content">
                 <p class="title">Контакты</p>
-                <a href="+79965827964" class="contacts__link"><img src="img/cont_phone.svg" alt="phone">+7(996)-582-79-64</a>
+                <a href="+79965827964" class="contacts__link"><img src="img/cont_phone.svg" alt="phone">+7(996)582-79-64</a>
                 <a href="mailto:info@ooo-sid.ru" class="contacts__link"><img src="img/cont_email.svg" alt="phone">info@ooo-sid.ru</a>
+                <a href="https://wa.me/79965827964" class="contacts__link"><img src="img/wa_gray.svg" alt="whatsapp">+7(996)582-79-64</a>
                 <a href="#" class="contacts__link"><img src="img/cont_telegram.svg" alt="phone">telegram</a>
                 <a href="https://goo.gl/maps/sBAsBtU9vJBRwh2F9" class="contacts__link" target="_blank" rel="noopener noreferrer"><img src="img/contacts_place.svg" alt="phone">г. Уфа, ул.50 лет СССР, 48/1</a>
 
@@ -126,13 +129,14 @@
   <section class="calc">
     <div class="container">
         <h2 class="title">Калькулятор Ваших финансовых и временных затрат</h2>
+        <div class="text">Рассчитайте Ваши текущие и будущие затраты на ИД </div>
         <form action="#" class="calc__form">
             <div class="calc__wrapper">
                 <div class="calc__item">
                     <div class="calc__name">Выберите раздел проекта</div>
                     <select id="select_ed" onchange="price(this)">
-                        <option selected disabled >Конструкции железобетонные</option>
-                        <option value="metr">Конструкции железобетонные</option>
+                        
+                        <option selected value="metr">Конструкции железобетонные</option>
                         <option value="tonna">Конструкции металлические</option>
                         <option value="lini">Технологические трубопроводы</option>
                         <option value="edin">Шифр РД на общестроительные работы</option>
@@ -141,15 +145,15 @@
                 </div>
                 <div class="calc__item">
                     <div class="calc__name">Количество месяцев от начала СМР до сдачи ИД в архив</div>
-                    <input id="mes" type="number" placeholder="5">
+                    <input id="mes" type="number" placeholder="50">
                 </div>
                 <div class="calc__item">
                     <div class="calc__name">Cреднее количество специалистов  строительства</div>
-                    <input id="spec" type="number" placeholder="5">
+                    <input id="spec" type="number" placeholder="31">
                 </div>
                 <div class="calc__item">
                     <div class="calc__name">Затраты на одного специалиста в месяц, в т.ч.  прочие расходы, т.р.</div>
-                    <input id="expenses" type="number" placeholder="300000">
+                    <input id="expenses" type="number" placeholder="300 000">
                 </div>
                 <div class="calc__item">
                     
@@ -160,16 +164,19 @@
                     <div class="calc__name" id="edin" >Количество единиц, сданных в архив (шт)</div>
 
                    
-                    <input id="volume" type="number" placeholder="200">
+                    <input id="volume" type="number" placeholder="50">
                 </div>
                 <div class="calc__item">
                     <div class="calc__name">Оставшийся объем работ, не сданный в архив</div>
-                    <input id="ostatki" type="number" placeholder="150">
+                    <input id="ostatki" type="number" placeholder="450">
                 </div>
             </div>
             <div class="btn" id="calcTrigger">Произвести анализ</div>
             <div class="btn remove" id="calcTrigger2">Произвести анализ</div>
-            <div class="calc__result"></div>
+            <div class="calc__result">
+                
+            </div>
+            <p class="calc__slogan remove">Мы сократим Ваши затраты на исполнительную документацию в несколько раз!</p>
             
         </form>
         <div class="btn" id="printResult" onclick="window.print()">Распечатать/Сохранить</div>
@@ -526,7 +533,7 @@
             
                     <div class="result__item item1">
                         <div class="result__content">
-                            <p class="result__title">Успешное подписаниеформ КС-2</p>
+                            <p class="result__title">Успешное подписание форм КС-2</p>
                             <p class="text">
                                 Как правило, причиной отказа в подписании КС-2 является отсутствие ИД.
                             </p>
@@ -654,7 +661,7 @@
               <div class="footer__item">
                 <p class="footer__title">Мы в соц.сетях</p>
                 
-                
+                <a href="https://wa.me/79965827964" class="footer__link"><img src="img/whats__footer.svg" alt="phone">+7(996)-582-79-64</a>
                 <a href="#" class="footer__link"><img src="img/telegram.svg" alt="phone">telegram</a>
             </div>
             <div class="footer__item">
@@ -665,6 +672,8 @@
                 <a href="company.html" class="footer__link">Компания</a>
             </div>
           </div>
+          <p class="copy">&copy; 2022 Все права защищены</p>
+          <p class="web">Дизайн и разработка сайта <a href="https://dina0308.github.io" target="_blank" rel="noopener noreferrer">D.Sharipova</a></p>
       </div>
   </footer>
 </body>
