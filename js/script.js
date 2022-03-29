@@ -99,7 +99,7 @@ $('.menu__item').each(function(i) {
           tableVirabotka = document.createElement('div'),
           tableCostResult = spec*mes*expenses,
           tableCost2Result = (tableCostResult/volume),
-          tableVirabotkaResult = (volume/spec/mes).toFixed(4);
+          tableVirabotkaResult = (volume/spec/mes).toFixed(2);
           
 
 
@@ -114,7 +114,7 @@ $('.menu__item').each(function(i) {
       tableVirabotka.classList.add('table__numbers');
 
       //заполняем таблицу
-      tableText1.textContent = 'За указанный период стоимость затрат на комплекс оформления исполнительной документации соствляет';
+      tableText1.textContent = 'За указанный период стоимость затрат соствляет';
       tableText2.textContent = 'Стоимость 1 единицы измерения составляет';
       tableText3.textContent = 'Средняя выработка одного специалиста в месяц составляет';
       tableCost.innerHTML = (tableCostResult).toLocaleString('ru'); //делим числа на разряды
@@ -155,7 +155,7 @@ $('.menu__item').each(function(i) {
             prognoz.textContent = 'Прогноз';
             table2Text1.textContent = 'стоимости оставшегося объема работ составляет';
             table2Text2.textContent = 'временных затрат (ед.изм 1 месяц)';
-            table2Cost.innerHTML = (tableCost2Result*ostatki).toLocaleString();
+            table2Cost.innerHTML = (tableCost2Result*ostatki).toLocaleString('ru');
             table2Cost2.innerHTML = (ostatki/tableVirabotkaResult/spec).toFixed(2);
 
         //выводим таблицу
@@ -191,7 +191,7 @@ $('.menu__item').each(function(i) {
           tableVirabotka = document.createElement('div'),
           tableCostResult = spec*mes*expenses,
           tableCost2Result = (tableCostResult/volume),
-          tableVirabotkaResult = (volume/spec/mes).toFixed(4);
+          tableVirabotkaResult = (volume/spec/mes).toFixed(2);
          
 
 
@@ -205,7 +205,7 @@ $('.menu__item').each(function(i) {
       tableVirabotka.classList.add('table__numbers');
 
       //заполняем таблицу
-      tableText1.textContent = 'За указанный период стоимость затрат на комплекс оформления исполнительной документации соствляет';
+      tableText1.textContent = 'За указанный период стоимость соствляет';
       tableText2.textContent = 'Стоимость 1 единицы измерения составляет';
       tableText3.textContent = 'Средняя выработка одного специалиста в месяц составляет';
       tableCost.innerHTML = (tableCostResult).toLocaleString('ru');
@@ -246,7 +246,7 @@ $('.menu__item').each(function(i) {
             prognoz.textContent = 'Прогноз';
             table2Text1.textContent = 'стоимости оставшегося объема работ составляет';
             table2Text2.textContent = 'временных затрат (ед.изм 1 месяц)';
-            table2Cost.innerHTML = tableCost2Result*ostatki;
+            table2Cost.innerHTML = (tableCost2Result*ostatki).toLocaleString('ru');
             table2Cost2.innerHTML = (ostatki/tableVirabotkaResult/spec).toFixed(2);
 
         //выводим таблицу
