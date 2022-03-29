@@ -34,8 +34,15 @@
         width: 90%;
         border: none;
     }
-    .win__title {
-        margin-top: 20px;
+    .prognoz__title {
+        
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        color: $main-color;
+        width: 90%;
+        margin: 20px auto 0;
     }
     &__slogan {
         color: $main-color;
@@ -66,6 +73,15 @@
     }
     &__numbers {
         width: 30%;
+        border-bottom: 1px solid $main-color;
+        
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &__ed {
+        width: 10%;
         border-bottom: 1px solid $main-color;
         
         padding: 5px 10px;

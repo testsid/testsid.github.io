@@ -97,6 +97,9 @@ $('.menu__item').each(function(i) {
           tableCost2 = document.createElement('div'),
           tableText3 = document.createElement('div'),
           tableVirabotka = document.createElement('div'),
+          tableEd1 = document.createElement('div'),
+          tableEd2 = document.createElement('div'),
+          tableEd3 = document.createElement('div'),
           tableCostResult = spec*mes*expenses,
           tableCost2Result = (tableCostResult/volume),
           tableVirabotkaResult = (volume/spec/mes).toFixed(2);
@@ -112,24 +115,33 @@ $('.menu__item').each(function(i) {
       tableCost2.classList.add('table__numbers');
       tableText3.classList.add('table__text');
       tableVirabotka.classList.add('table__numbers');
+      tableEd1.classList.add('table__ed');
+      tableEd2.classList.add('table__ed');
+      tableEd3.classList.add('table__ed');
 
       //заполняем таблицу
-      tableText1.textContent = 'За указанный период стоимость затрат соствляет, руб.';
-      tableText2.textContent = 'Стоимость 1 единицы измерения составляет, руб.';
+      tableText1.textContent = 'За указанный период стоимость затрат соствляет';
+      tableText2.textContent = 'Стоимость 1 единицы (м3, тн., шт.) составляет';
       tableText3.textContent = 'Средняя выработка одного специалиста в месяц составляет';
       tableCost.innerHTML = (tableCostResult).toLocaleString('ru'); //делим числа на разряды
       tableCost2.innerHTML = (tableCost2Result).toLocaleString('ru');
       tableVirabotka.innerHTML = tableVirabotkaResult;
+      tableEd1.innerHTML = 'руб.';
+      tableEd2.innerHTML = 'руб.';
+      tableEd3.innerHTML = 'ед./чел.';
       
 
       //выводим таблицу
       result.appendChild(table); 
       table.appendChild(tableText1);
       table.appendChild(tableCost);
+      table.appendChild(tableEd1);
       table.appendChild(tableText2);
       table.appendChild(tableCost2);
+      table.appendChild(tableEd2);
       table.appendChild(tableText3);
       table.appendChild(tableVirabotka);
+      table.appendChild(tableEd3);
 
       //условие для прогноза
 
@@ -141,15 +153,19 @@ $('.menu__item').each(function(i) {
             table2Text1 = document.createElement('div'),
             table2Cost = document.createElement('div'),
             table2Text2 = document.createElement('div'),
-            table2Cost2 = document.createElement('div');
+            table2Cost2 = document.createElement('div'),
+            tableEd4 = document.createElement('div'),
+            tableEd5 = document.createElement('div');
 
         //добавляем классы созданным элементам
-            prognoz.classList.add('win__title');
+            prognoz.classList.add('prognoz__title');
             table2.classList.add('table2'); 
             table2Text1.classList.add('table__text');
             table2Cost.classList.add('table__numbers');
             table2Text2.classList.add('table__text');
             table2Cost2.classList.add('table__numbers');
+            tableEd4.classList.add('table__ed');
+            tableEd5.classList.add('table__ed');
 
         //заполняем таблицу
             prognoz.textContent = 'Прогноз будущих затрат';
@@ -157,14 +173,19 @@ $('.menu__item').each(function(i) {
             table2Text2.textContent = 'Оставшееся время на формирование и сдачу в архив составляет';
             table2Cost.innerHTML = (tableCost2Result*ostatki).toLocaleString('ru');
             table2Cost2.innerHTML = (ostatki/tableVirabotkaResult/spec).toFixed(2);
+            tableEd4.innerHTML = 'руб.';
+            tableEd5.innerHTML = 'месяцев';
 
         //выводим таблицу
             result.appendChild(prognoz); 
             result.appendChild(table2); 
             table2.appendChild(table2Text1);
             table2.appendChild(table2Cost);
+            table2.appendChild(tableEd4);
             table2.appendChild(table2Text2);
             table2.appendChild(table2Cost2);
+            table2.appendChild(tableEd5);
+            
       } 
       btn.classList.add('remove');
       btn2.classList.remove('remove');
@@ -175,6 +196,7 @@ $('.menu__item').each(function(i) {
       document.querySelector('.table').remove(); //удаляем таблицу с ранее введенными данными
       if (document.querySelectorAll('.table2').length > 0) { //проверяем, была ли прогнозная таблица в редыдущем расчете
         document.querySelector('.table2').remove();
+        document.querySelector('.prognoz__title').remove();
       }
       
       let mes = document.getElementById('mes').value,
@@ -192,6 +214,9 @@ $('.menu__item').each(function(i) {
           tableCost2 = document.createElement('div'),
           tableText3 = document.createElement('div'),
           tableVirabotka = document.createElement('div'),
+          tableEd1 = document.createElement('div'),
+          tableEd2 = document.createElement('div'),
+          tableEd3 = document.createElement('div'),
           tableCostResult = spec*mes*expenses,
           tableCost2Result = (tableCostResult/volume),
           tableVirabotkaResult = (volume/spec/mes).toFixed(2);
@@ -206,24 +231,33 @@ $('.menu__item').each(function(i) {
       tableCost2.classList.add('table__numbers');
       tableText3.classList.add('table__text');
       tableVirabotka.classList.add('table__numbers');
+      tableEd1.classList.add('table__ed');
+      tableEd2.classList.add('table__ed');
+      tableEd3.classList.add('table__ed');
 
       //заполняем таблицу
-      tableText1.textContent = 'За указанный период стоимость соствляет, руб.';
-      tableText2.textContent = 'Стоимость 1 единицы измерения составляет, руб.';
+      tableText1.textContent = 'За указанный период стоимость работ соствляет';
+      tableText2.textContent = 'Стоимость 1 единицы (м3, тн., шт.) составляет';
       tableText3.textContent = 'Средняя выработка одного специалиста в месяц составляет';
       tableCost.innerHTML = (tableCostResult).toLocaleString('ru');
       tableCost2.innerHTML = (tableCost2Result).toLocaleString('ru');
       tableVirabotka.innerHTML = tableVirabotkaResult;
+      tableEd1.innerHTML = 'руб.';
+      tableEd2.innerHTML = 'руб.';
+      tableEd3.innerHTML = 'ед./чел.';
       
 
       //выводим таблицу
       result.appendChild(table); 
       table.appendChild(tableText1);
       table.appendChild(tableCost);
+      table.appendChild(tableEd1);
       table.appendChild(tableText2);
       table.appendChild(tableCost2);
+      table.appendChild(tableEd2);
       table.appendChild(tableText3);
       table.appendChild(tableVirabotka);
+      table.appendChild(tableEd3);
 
       //условие для прогноза
 
@@ -235,42 +269,42 @@ $('.menu__item').each(function(i) {
             table2Text1 = document.createElement('div'),
             table2Cost = document.createElement('div'),
             table2Text2 = document.createElement('div'),
-            table2Cost2 = document.createElement('div');
+            table2Cost2 = document.createElement('div'),
+            tableEd4 = document.createElement('div'),
+            tableEd5 = document.createElement('div');
 
         //добавляем классы созданным элементам
-            prognoz.classList.add('win__title');
-            table2.classList.add('table'); 
+            prognoz.classList.add('prognoz__title');
+            table2.classList.add('table2'); 
             table2Text1.classList.add('table__text');
             table2Cost.classList.add('table__numbers');
             table2Text2.classList.add('table__text');
             table2Cost2.classList.add('table__numbers');
+            tableEd4.classList.add('table__ed');
+            tableEd5.classList.add('table__ed');
 
         //заполняем таблицу
-            prognoz.textContent = 'Прогноз';
-            table2Text1.textContent = 'стоимости оставшегося объема работ составляет';
-            table2Text2.textContent = 'временных затрат (ед.изм 1 месяц)';
+            prognoz.textContent = 'Прогноз будущих затрат';
+            table2Text1.textContent = 'Стоимость оставшегося объема работ составляет';
+            table2Text2.textContent = 'Оставшееся время на формирование и сдачу в архив составляет';
             table2Cost.innerHTML = (tableCost2Result*ostatki).toLocaleString('ru');
             table2Cost2.innerHTML = (ostatki/tableVirabotkaResult/spec).toFixed(2);
+            tableEd4.innerHTML = 'руб.';
+            tableEd5.innerHTML = 'месяцев';
 
         //выводим таблицу
             result.appendChild(prognoz); 
             result.appendChild(table2); 
             table2.appendChild(table2Text1);
             table2.appendChild(table2Cost);
+            table2.appendChild(tableEd4);
             table2.appendChild(table2Text2);
             table2.appendChild(table2Cost2);
+            table2.appendChild(tableEd5);
       } 
       
 
     });
-
-    
-
-    
-   
-
-
-
 
     
 
