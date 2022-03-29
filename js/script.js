@@ -114,8 +114,8 @@ $('.menu__item').each(function(i) {
       tableVirabotka.classList.add('table__numbers');
 
       //заполняем таблицу
-      tableText1.textContent = 'За указанный период стоимость затрат соствляет';
-      tableText2.textContent = 'Стоимость 1 единицы измерения составляет';
+      tableText1.textContent = 'За указанный период стоимость затрат соствляет, руб.';
+      tableText2.textContent = 'Стоимость 1 единицы измерения составляет, руб.';
       tableText3.textContent = 'Средняя выработка одного специалиста в месяц составляет';
       tableCost.innerHTML = (tableCostResult).toLocaleString('ru'); //делим числа на разряды
       tableCost2.innerHTML = (tableCost2Result).toLocaleString('ru');
@@ -145,16 +145,16 @@ $('.menu__item').each(function(i) {
 
         //добавляем классы созданным элементам
             prognoz.classList.add('win__title');
-            table2.classList.add('table'); 
+            table2.classList.add('table2'); 
             table2Text1.classList.add('table__text');
             table2Cost.classList.add('table__numbers');
             table2Text2.classList.add('table__text');
             table2Cost2.classList.add('table__numbers');
 
         //заполняем таблицу
-            prognoz.textContent = 'Прогноз';
-            table2Text1.textContent = 'стоимости оставшегося объема работ составляет';
-            table2Text2.textContent = 'временных затрат (ед.изм 1 месяц)';
+            prognoz.textContent = 'Прогноз будущих затрат';
+            table2Text1.textContent = 'Стоимость оставшегося объема работ составляет';
+            table2Text2.textContent = 'Оставшееся время на формирование и сдачу в архив составляет';
             table2Cost.innerHTML = (tableCost2Result*ostatki).toLocaleString('ru');
             table2Cost2.innerHTML = (ostatki/tableVirabotkaResult/spec).toFixed(2);
 
@@ -172,7 +172,10 @@ $('.menu__item').each(function(i) {
 
     });
     btn2.addEventListener('click', function(){
-      document.querySelector('.table').remove();
+      document.querySelector('.table').remove(); //удаляем таблицу с ранее введенными данными
+      if (document.querySelectorAll('.table2').length > 0) { //проверяем, была ли прогнозная таблица в редыдущем расчете
+        document.querySelector('.table2').remove();
+      }
       
       let mes = document.getElementById('mes').value,
           spec = document.getElementById('spec').value,
@@ -205,8 +208,8 @@ $('.menu__item').each(function(i) {
       tableVirabotka.classList.add('table__numbers');
 
       //заполняем таблицу
-      tableText1.textContent = 'За указанный период стоимость соствляет';
-      tableText2.textContent = 'Стоимость 1 единицы измерения составляет';
+      tableText1.textContent = 'За указанный период стоимость соствляет, руб.';
+      tableText2.textContent = 'Стоимость 1 единицы измерения составляет, руб.';
       tableText3.textContent = 'Средняя выработка одного специалиста в месяц составляет';
       tableCost.innerHTML = (tableCostResult).toLocaleString('ru');
       tableCost2.innerHTML = (tableCost2Result).toLocaleString('ru');
