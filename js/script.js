@@ -303,5 +303,4 @@ function price(obj) {
   }
   
   
-  
 }
