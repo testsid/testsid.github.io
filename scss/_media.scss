@@ -32,15 +32,7 @@
 }
 
 @media screen and (max-width:1110px) {
-    .serv {
-        &__modal {
-            width: 100%;
-            transform: translate(0, 0);
-            top: 0;
-            left: 0;
-           
-        }
-    }
+   
     .result {
         &__title {
             font-size: 14px;
