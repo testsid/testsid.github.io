@@ -120,7 +120,7 @@ $('.menu__item').each(function(i) {
       tableEd3.classList.add('table__ed');
 
       //заполняем таблицу
-      tableText1.textContent = 'За указанный период стоимость затрат соствляет';
+      tableText1.textContent = 'За указанный период стоимость затрат составляет';
       tableText2.textContent = 'Стоимость 1 единицы (м3/тн./шт.) составляет';
       tableText3.textContent = 'Средняя выработка одного специалиста в месяц составляет';
       tableCost.innerHTML = (tableCostResult).toLocaleString('ru'); //делим числа на разряды
@@ -236,7 +236,7 @@ $('.menu__item').each(function(i) {
       tableEd3.classList.add('table__ed');
 
       //заполняем таблицу
-      tableText1.textContent = 'За указанный период стоимость затрат соствляет';
+      tableText1.textContent = 'За указанный период стоимость затрат составляет';
       tableText2.textContent = 'Стоимость 1 единицы (м3/тн./шт.) составляет';
       tableText3.textContent = 'Средняя выработка одного специалиста в месяц составляет';
       tableCost.innerHTML = (tableCostResult).toLocaleString('ru');
