@@ -261,9 +261,13 @@
             line-height: 10px;
         }
         &__item {
+            
             width: 45%;
             input, select {
-                height: 20px;
+                height: 25px;
+            }
+            &__select {
+                width: 90%;
             }
         }
     }
@@ -300,6 +304,15 @@
         &__text {
             font-size: 10px;
         }
+        &__numbers {
+            font-size: 11px;
+        }
+        &__ed {
+            font-size: 10px;
+        }
+    }
+    .table2 {
+        width: 100%;
     }
     .serv {
         &__modal {
@@ -405,6 +418,15 @@
             margin-top: 20px;
         }
     }
+    @keyframes scroll {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(-500%, 0)
+        }
+    }
+    
 }
 @media screen and (max-width:424px) {
     .win {

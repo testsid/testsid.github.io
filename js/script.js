@@ -121,7 +121,7 @@ $('.menu__item').each(function(i) {
 
       //заполняем таблицу
       tableText1.textContent = 'За указанный период стоимость затрат соствляет';
-      tableText2.textContent = 'Стоимость 1 единицы (м3, тн., шт.) составляет';
+      tableText2.textContent = 'Стоимость 1 единицы (м3/тн./шт.) составляет';
       tableText3.textContent = 'Средняя выработка одного специалиста в месяц составляет';
       tableCost.innerHTML = (tableCostResult).toLocaleString('ru'); //делим числа на разряды
       tableCost2.innerHTML = (tableCost2Result).toLocaleString('ru');
@@ -174,7 +174,7 @@ $('.menu__item').each(function(i) {
             table2Cost.innerHTML = (tableCost2Result*ostatki).toLocaleString('ru');
             table2Cost2.innerHTML = (ostatki/tableVirabotkaResult/spec).toFixed(2);
             tableEd4.innerHTML = 'руб.';
-            tableEd5.innerHTML = 'месяцев';
+            tableEd5.innerHTML = 'мес.';
 
         //выводим таблицу
             result.appendChild(prognoz); 
@@ -237,7 +237,7 @@ $('.menu__item').each(function(i) {
 
       //заполняем таблицу
       tableText1.textContent = 'За указанный период стоимость затрат соствляет';
-      tableText2.textContent = 'Стоимость 1 единицы (м3, тн., шт.) составляет';
+      tableText2.textContent = 'Стоимость 1 единицы (м3/тн./шт.) составляет';
       tableText3.textContent = 'Средняя выработка одного специалиста в месяц составляет';
       tableCost.innerHTML = (tableCostResult).toLocaleString('ru');
       tableCost2.innerHTML = (tableCost2Result).toLocaleString('ru');
@@ -290,7 +290,7 @@ $('.menu__item').each(function(i) {
             table2Cost.innerHTML = (tableCost2Result*ostatki).toLocaleString('ru');
             table2Cost2.innerHTML = (ostatki/tableVirabotkaResult/spec).toFixed(2);
             tableEd4.innerHTML = 'руб.';
-            tableEd5.innerHTML = 'месяцев';
+            tableEd5.innerHTML = 'мес.';
 
         //выводим таблицу
             result.appendChild(prognoz); 
