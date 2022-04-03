@@ -155,7 +155,10 @@ $('.menu__item').each(function(i) {
             table2Text2 = document.createElement('div'),
             table2Cost2 = document.createElement('div'),
             tableEd4 = document.createElement('div'),
-            tableEd5 = document.createElement('div');
+            tableEd5 = document.createElement('div'),
+            itog = document.createElement('div'),
+            itogNumber = document.createElement('div'),
+            tableEd6 = document.createElement('div');
 
         //добавляем классы созданным элементам
             prognoz.classList.add('prognoz__title');
@@ -166,15 +169,21 @@ $('.menu__item').each(function(i) {
             table2Cost2.classList.add('table__numbers');
             tableEd4.classList.add('table__ed');
             tableEd5.classList.add('table__ed');
+            tableEd6.classList.add('table__ed');
+            itog.classList.add('table__text');
+            itogNumber.classList.add('table__numbers');
 
         //заполняем таблицу
-            prognoz.textContent = 'Прогноз будущих затрат';
+            prognoz.textContent = 'Прогноз возможных будущих затрат';
             table2Text1.textContent = 'Стоимость оставшегося объема работ составляет';
-            table2Text2.textContent = 'Оставшееся время на формирование и сдачу в архив составляет';
+            table2Text2.textContent = 'Оставшееся время на формирование и сдачу в архив ИД составляет';
             table2Cost.innerHTML = (tableCost2Result*ostatki).toLocaleString('ru');
-            table2Cost2.innerHTML = (ostatki/tableVirabotkaResult/spec).toFixed(2);
+            table2Cost2.innerHTML = (ostatki/tableVirabotkaResult/spec).toFixed(0);
             tableEd4.innerHTML = 'руб.';
             tableEd5.innerHTML = 'мес.';
+            tableEd6.innerHTML = 'руб.';
+            itog.innerHTML = 'Итого стоимость составляет';
+            itogNumber.innerHTML = (tableCostResult+tableCost2Result*ostatki).toLocaleString('ru');
 
         //выводим таблицу
             result.appendChild(prognoz); 
@@ -185,6 +194,10 @@ $('.menu__item').each(function(i) {
             table2.appendChild(table2Text2);
             table2.appendChild(table2Cost2);
             table2.appendChild(tableEd5);
+            table2.appendChild(itog);
+            table2.appendChild(itogNumber);
+            table2.appendChild(tableEd6);
+            
             
       } 
       btn.classList.add('remove');
@@ -271,7 +284,10 @@ $('.menu__item').each(function(i) {
             table2Text2 = document.createElement('div'),
             table2Cost2 = document.createElement('div'),
             tableEd4 = document.createElement('div'),
-            tableEd5 = document.createElement('div');
+            tableEd5 = document.createElement('div'),
+            itog = document.createElement('div'),
+            itogNumber = document.createElement('div'),
+            tableEd6 = document.createElement('div');
 
         //добавляем классы созданным элементам
             prognoz.classList.add('prognoz__title');
@@ -282,15 +298,21 @@ $('.menu__item').each(function(i) {
             table2Cost2.classList.add('table__numbers');
             tableEd4.classList.add('table__ed');
             tableEd5.classList.add('table__ed');
+            tableEd6.classList.add('table__ed');
+            itog.classList.add('table__text');
+            itogNumber.classList.add('table__numbers');
 
         //заполняем таблицу
-            prognoz.textContent = 'Прогноз будущих затрат';
+            prognoz.textContent = 'Прогноз возможных будущих затрат';
             table2Text1.textContent = 'Стоимость оставшегося объема работ составляет';
-            table2Text2.textContent = 'Оставшееся время на формирование и сдачу в архив составляет';
+            table2Text2.textContent = 'Оставшееся время на формирование и сдачу в архив ИД составляет';
             table2Cost.innerHTML = (tableCost2Result*ostatki).toLocaleString('ru');
-            table2Cost2.innerHTML = (ostatki/tableVirabotkaResult/spec).toFixed(2);
+            table2Cost2.innerHTML = (ostatki/tableVirabotkaResult/spec).toFixed(0);
             tableEd4.innerHTML = 'руб.';
             tableEd5.innerHTML = 'мес.';
+            tableEd6.innerHTML = 'руб.';
+            itog.innerHTML = 'Итого стоимость составляет';
+            itogNumber.innerHTML = (tableCostResult+tableCost2Result*ostatki).toLocaleString('ru');
 
         //выводим таблицу
             result.appendChild(prognoz); 
@@ -301,6 +323,9 @@ $('.menu__item').each(function(i) {
             table2.appendChild(table2Text2);
             table2.appendChild(table2Cost2);
             table2.appendChild(tableEd5);
+            table2.appendChild(itog);
+            table2.appendChild(itogNumber);
+            table2.appendChild(tableEd6);
       } 
       
 
