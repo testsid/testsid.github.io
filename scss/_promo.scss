@@ -13,7 +13,17 @@
         position: absolute;
         top: 0;
         right: 0;
+        height: 100vh;
+        width: 40%;
+        background: url(../img/promo.jpg) no-repeat right top;
     }
+    &__img_mob {
+        position: absolute;
+       
+        right: -142px;
+        bottom: 0;
+    }
+   
     &__title {
         font-family: 'Prata';
         font-weight: 400;
@@ -65,7 +75,7 @@
         font-size: 1.2rem;
         line-height: 27px;
         text-align: center;
-
+        width: 25%;
         color: #FFFFFF;
     }
     

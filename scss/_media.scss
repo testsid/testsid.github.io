@@ -1,0 +1,17 @@
+@media (max-width:1023px) {
+    .promo {
+        &__img {
+            display: none;
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: 499px) {
+    html {
+        font-size: 15px !important;
+    }
+}
