@@ -3,7 +3,42 @@
         &__img {
             display: none;
         }
+        &__img_mob {
+            display: block;
+        }
     }
+    .wins {
+        transform: translateY(-175%);
+        &__wrapper {
+            padding: 30px 35px;
+            height: 125px;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .container {
+        width: 85%;
+    }
+    .promo {
+        &__img_mob {
+            right: -320px;
+        }
+    }
+    .logo {
+        width: 120px;
+    }
+    .wins {
+        transform: translateY(-200%);
+        &__item {
+            font-size: .8rem;
+        }
+        &__wrapper {
+            padding: 25px 19px;
+            height: 100px;
+        }
+    }
+    
 }
 
 
@@ -13,5 +48,10 @@
 @media (max-width: 499px) {
     html {
         font-size: 15px !important;
+    }
+    .menu {
+        &__phone, &__cons {
+            font-size: .8rem;
+        }
     }
 }

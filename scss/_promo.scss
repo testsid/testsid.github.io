@@ -18,10 +18,16 @@
         background: url(../img/promo.jpg) no-repeat right top;
     }
     &__img_mob {
+        display: none;
         position: absolute;
-       
-        right: -142px;
-        bottom: 0;
+        right: -256px;
+        z-index: -1;
+        top: 0;
+        opacity: .2;
+        height: 100vh;
+        img {
+            height: 100%;
+        }
     }
    
     &__title {
@@ -73,7 +79,7 @@
     &__item {
         font-weight: 500;
         font-size: 1.2rem;
-        line-height: 27px;
+        line-height: 120%;
         text-align: center;
         width: 25%;
         color: #FFFFFF;
