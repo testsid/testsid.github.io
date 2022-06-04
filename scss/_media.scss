@@ -47,7 +47,12 @@
     }
     .menu {
         &__phone, &__cons {
-            font-size: .8rem;
+            font-size: .7rem;
+        }
+    }
+    .wins {
+        &__wrapper {
+            width: 100%;
         }
     }
 }
