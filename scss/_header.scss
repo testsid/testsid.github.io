@@ -1,0 +1,33 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+   
+    height: 138px;
+    margin-top: 19px;
+    position: relative;
+    z-index: 4;
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    &__phone {
+        margin-right: 15px;
+        color: #fff;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    &__cons {
+        color: #fff;
+        font-weight: 500;
+        text-decoration: none;
+    }
+}
+.logo {
+    display: block;
+    width: 165px;
+    margin-top: -4px;
+    img {
+        width: 100%;
+    }
+}
