@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+}
+@import '_vari.scss';
+.container {
+    width: 90%;
+    max-width: 1160px;
+    position: relative;
+    margin: 0 auto;
+}
+.title {
+    font-family: 'Prata', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: $main-color;
+}
+.btn {
+    display: block;
+    padding: 17px 47px;
+    background: $second-color;
+    color: $main-color;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    width: fit-content;
+    &:hover {
+        cursor: pointer;
+        background: $main-color;
+        color: $second-color;
+        outline: 1px solid $second-color;
+    }
+    &:active {
+        box-shadow: inset 2px 2px 5px #000;
+}
+}
+
+@import '_header.scss';
+@import '_promo.scss';
+@import '_rew.scss';
+@import '_about.scss';
+
+@import '_media.scss';
