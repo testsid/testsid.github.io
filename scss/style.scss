@@ -18,6 +18,7 @@ body {
 }
 .title {
     font-family: 'Prata', serif;
+    font-size: 2rem;
 }
 .btn {
     display: block;
@@ -36,9 +37,13 @@ body {
         color: $second-color;
         outline: 1px solid $second-color;
     }
+    &:active {
+        box-shadow: inset 2px 2px 5px #000;
+}
 }
 
 @import '_header.scss';
 @import '_promo.scss';
+@import '_rew.scss';
 
 @import '_media.scss';
