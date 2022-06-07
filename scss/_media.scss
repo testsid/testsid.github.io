@@ -5,6 +5,11 @@
             height: 270px;
         }
     }
+    .teh {
+        &__photo {
+            width: 400px;
+        }
+    }
 }
 @media (max-width:1023px) {
     .promo {
@@ -33,9 +38,21 @@
             font-size: .8rem;
         }
     }
+    .teh {
+        &__photo {
+            width: 300px;
+        }
+        &__text {
+            font-size: 14px;
+            width: 180px;
+        }
+    }
 }
 
 @media (max-width:767px) {
+    .title {
+        font-size: 1.2rem;
+    }
     .container {
         width: 85%;
     }
@@ -70,6 +87,43 @@
         }
         &::after {
             display: none;
+        }
+    }
+    .teh {
+        background: linear-gradient(to left, #332F29 40%, #fff 40%);
+        // background: $main-color;
+        padding: 50px 0 0;
+
+        &__wrapper {
+            display: block;
+        }
+        &__photo {
+            width: 160px;
+        }
+        &__text {
+            margin: 0;
+            line-height: 120%;
+            background: $main-color;
+            font-size: 12px;
+            padding: 10px 15px;
+            width: 320px;
+            margin-left: -150px;
+        }
+    }
+    .tabs {
+        margin-top: 30px;
+        position: relative;
+        &__caption {
+            li {
+                font-size: .8rem;
+                height: 20px;
+                margin-top: 10px;
+                &.active {
+                    &:before {
+                        top: 5px;
+                    }
+                }
+            }
         }
     }
     

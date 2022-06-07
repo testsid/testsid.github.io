@@ -33,6 +33,8 @@ body {
     text-transform: uppercase;
     border-radius: 5px;
     width: fit-content;
+    position: relative;
+    z-index: 2;
     &:hover {
         cursor: pointer;
         background: $main-color;
@@ -48,5 +50,6 @@ body {
 @import '_promo.scss';
 @import '_rew.scss';
 @import '_about.scss';
+@import '_teh.scss';
 
 @import '_media.scss';

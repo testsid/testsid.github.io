@@ -1,0 +1,82 @@
+// @keyframes photo {
+//     0% {
+//         width: 0;
+//     }
+//     50% {
+//         width: 150px;
+//     }
+//     100% {
+//         width: 400px;
+//     }
+// }
+
+
+.tabs__content {
+    display: none; /* по умолчанию прячем все блоки */
+  }
+  .tabs__content.active {
+    display: block; /* по умолчанию показываем нужный блок */
+  }
+
+.tabs {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    &__caption {
+        list-style-type: none;
+        margin-right: 25px;
+        li {
+            padding-left: 10px;
+            &.active {
+                border-bottom: 2px solid $main-color;
+                &::before {
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    background: $main-color;
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                }
+            }
+            cursor: pointer;
+            position: relative;
+            margin-top: 20px;
+            display: block;
+            height: 25px;
+            width: fit-content;
+            font-size: 1.2rem;
+            &:hover {
+                border-bottom: 2px solid $main-color;
+                
+            }
+        }
+       
+    }
+}
+
+.teh {
+    background: linear-gradient(to left, $main-color 50%, #fff 50%);
+    padding: 100px 0 100px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        width: 294px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        margin-left: 30px;
+        align-self: end;
+        color: $second-color;
+        margin-bottom: 30px;
+    }
+    &__photo {
+        width: 500px;
+        img {
+            width: 100%;
+        }
+        // animation: photo 0.5s ease;
+    }
+}
