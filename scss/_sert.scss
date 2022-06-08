@@ -1,0 +1,18 @@
+.sert {
+    padding: 100px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 40px auto 0;
+    }
+    &__item {
+        width: 275px;
+        height: 333px;
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+        margin: 20px;
+    }
+}
