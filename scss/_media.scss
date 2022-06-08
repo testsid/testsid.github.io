@@ -79,7 +79,14 @@
             height: 100px;
         }
     }
+    .rew {
+        padding-top: 60px;
+        .swiper {
+            margin-top: 0;
+        }
+    }
     .about {
+        padding-top: 50px;
         &__wrapper {
             flex-direction: column;
             align-items: center;
@@ -133,6 +140,25 @@
                     }
                 }
             }
+        }
+    }
+    .result {
+        &__photo {
+            height: 250px;
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .price {
+        
+        &__photo {
+            display: none;
+        }
+        &__block {
+            width: 90%;
+            margin: 30px auto 0;
         }
     }
     

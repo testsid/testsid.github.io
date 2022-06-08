@@ -1,0 +1,51 @@
+.price {
+    position: relative;
+    padding: 50px 0 100px;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 45%;
+        height: 350px;
+        background: #F3EBE3;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+    &__block {
+        width: 65%;
+        background: $main-color;
+        margin-top: 30px;
+        margin-left: auto;
+        padding: 60px 20px;
+        color: #F3EBE3;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid #F3EBE3;
+        height: 35px;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 1.5rem;
+        
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: 1.3rem;
+        
+    }
+    &__text {
+        font-size: 1rem;
+        font-weight: 300;
+
+    }
+    &__photo {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+}
