@@ -41,7 +41,7 @@
     }
     &__subtitle {
         font-weight: 400;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
 
         color: #FFFFFF;
         list-style-type: none;
@@ -50,6 +50,7 @@
         margin-bottom: 70px;
         li {
             position: relative;
+            margin-bottom: 10px;
             &::before {
                 content: '';
                 display: block;
