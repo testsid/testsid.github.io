@@ -128,7 +128,7 @@
         }
         &__text {
             margin: 0;
-            line-height: 120%;
+            line-height: 170%;
             background: $main-color;
             font-size: 12px;
             padding: 10px 15px;
@@ -153,6 +153,7 @@
         }
     }
     .result {
+        padding: 50px 0;
         &__photo {
             height: 250px;
             img {
@@ -161,8 +162,11 @@
             }
         }
     }
+    .sert {
+        padding: 50px 0;
+    }
     .price {
-        
+        padding: 50px 0;
         &__photo {
             display: none;
         }
@@ -172,6 +176,7 @@
         }
     }
     .complex {
+        padding: 50px 0;
         &__wrapper {
             align-items: center;
         }
@@ -186,6 +191,12 @@
             li {
                 margin-bottom: 10px;
             }
+        }
+    }
+    .form {
+        padding: 50px 0;
+        &__text {
+            font-size: 16px;
         }
     }
 }
