@@ -56,6 +56,16 @@
             padding: 0 15px 15px;
         }
     }
+    .complex {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: auto;
+            margin-top: 20px;
+            padding: 35px 40px;
+        }
+    }
 }
 
 @media (max-width:767px) {
@@ -161,7 +171,23 @@
             margin: 30px auto 0;
         }
     }
-    
+    .complex {
+        &__wrapper {
+            align-items: center;
+        }
+        &__item {
+            width: 90%;
+            height: 300px;
+        }
+        .btn {
+            margin-top: 30px;
+        }
+        &__serv {
+            li {
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
 
 
