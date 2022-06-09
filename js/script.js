@@ -43,6 +43,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
           
         });
       
+        //modal 
+      
+      $('.consult').on('click', function(){
+        $('.overlay, .modal').fadeIn();
+       });
+       $('.modal__close, .overlay').on('click', function(){
+         $('.overlay, .modal, .thanks').fadeOut();
+       });
 
 
 

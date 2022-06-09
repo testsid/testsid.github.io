@@ -30,7 +30,7 @@
                 <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
                 <div class="menu__contacts">
                     <a href="#" class="menu__phone">+7 999 999 89 87</a>
-                    <div class="menu__cons">Заказать звонок</div>
+                    <div class="menu__cons consult" >Заказать звонок</div>
                 </div>
                 
             </div>
@@ -40,7 +40,7 @@
                 <li>Бесплатная консультация</li>
                 <li>Укладка в подарок</li>
             </ul>
-            <div class="btn">Записаться</div>
+            <div class="btn consult">Записаться</div>
         </div>
         <div class="promo__img"></div></div>
         <div class="promo__img_mob"><img src="img/promo_mob2.png" alt="promo"></div>
@@ -329,7 +329,7 @@
                         <li>Индивидуальное наращивание</li>
                         <li>Окрашивание</li>
                     </ul>
-                    <div class="btn">Записаться</div>
+                    <div class="btn consult">Записаться</div>
                 </div>
                 <div class="complex__item complex2">
                     <p class="complex__title">Образ для Тебя</p>
@@ -338,7 +338,7 @@
                         <li>Индивидуальное наращивание</li>
                         <li>Окрашивание</li>
                     </ul>
-                    <div class="btn">Записаться</div>
+                    <div class="btn consult">Записаться</div>
                 </div>
                 <div class="complex__item complex3">
                     <p class="complex__title">Образ для Тебя</p>
@@ -347,7 +347,7 @@
                         <li>Индивидуальное наращивание</li>
                         <li>Окрашивание</li>
                     </ul>
-                    <div class="btn">Записаться</div>
+                    <div class="btn consult">Записаться</div>
                 </div>
             </div>
         </div>
@@ -356,13 +356,43 @@
         <div class="container">
             <h2 class="title">Остались вопросы?</h2>
             <p class="form__text">Отправь заявку, мы перезвоним тебе и подробно проконсультируем.</p>
-            <div class="btn">Заказать звонок</div>
+            <div class="btn consult">Заказать звонок</div>
         </div>
     </section>
     <footer>
         <div class="container">
-            <div class="footer__wrapper"></div>
+            <div class="footer__wrapper">
+                <div class="footer__item">
+                    <div class="logo"><img src="img/logo.png" alt="logo"></div>
+                    <div class="footer__contacts">
+                        <a href="https://goo.gl/maps/SiTqJdTHLSUJ1geQ8"><img src="img/place.svg" alt="place">Москва, 3-я улица Ямского поля, 9 к. 3</a>
+                        <a href="tel:+79266149567" class="footer__cont"><img src="img/phone.svg" alt="phone">+7 926 614 95 67</a>
+                        <a href="tg://+79266149567" class="footer__cont"><img src="img/telegram.svg" alt="telegram">Telegram</a>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.7072585647693!2d37.578085215829546!3d55.78095598056096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a202ed0306f%3A0x8f2945666507aaa9!2zMy3RjyDQr9C80YHQutC-0LPQviDQn9C-0LvRjyDRg9C7LiwgOSDQutC-0YDQv9GD0YEgMywg0JzQvtGB0LrQstCwLCAxMjUwNDA!5e0!3m2!1sru!2sru!4v1654692372863!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="copyright">&copy; Все права защищены</div>
         </div>
+       
     </footer>
+    <!-- modal -->
+    <div class="overlay"></div>
+    <div class="modal">
+        <div class="modal__close">&times;</div>
+        <p class="modal__title">Оставьте Ваши контакты, <br> и я свяжусь с Вами в ближайшее время</p>
+        <form class="modal__form" action="#">
+            <input type="text" placeholder="Ваше имя" name="name" required>
+            <input type="number" placeholder="Ваш телефон" name="phone" required>
+            <textarea placeholder="Введите сообщение" name="textmessage"></textarea>
+            <button class="btn" type="submit">Отправить</button>
+        </form>
+    </div>
+    <div class="thanks">
+        <div class="modal__close">&times;</div>
+        <p class="modal__title">Спасибо за заявку!</p>
+    </div>
 </body>
 </html>
