@@ -23,7 +23,13 @@
         line-height: 160%;
         color: $main-color;
         width: 40%;
-        
+        span {
+            font-size:12px; 
+            font-style:italic; 
+            line-height:14px;
+            display: block;
+            text-align: right;
+        }
     }
     &__photo {
         width: 40%;
