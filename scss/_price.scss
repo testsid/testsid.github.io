@@ -16,12 +16,12 @@
         background: $main-color;
         margin-top: 30px;
         margin-left: auto;
-        padding: 60px 20px;
+        padding: 40px 60px;
         color: #F3EBE3;
     }
     &__row {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #F3EBE3;
         height: 35px;
@@ -34,7 +34,8 @@
     &__subtitle {
         font-weight: 500;
         font-size: 1.3rem;
-        
+        width: 100%;
+        text-align: center;
     }
     &__text {
         font-size: 1rem;
@@ -47,5 +48,7 @@
         left: 0;
         z-index: -1;
     }
-    
+    .right {
+        text-align: right;
+    }
 }

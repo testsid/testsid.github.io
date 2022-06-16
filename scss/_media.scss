@@ -214,6 +214,21 @@
             }
         }
     }
+    .price {
+        &__block {
+            padding: 30px 7px;
+        }
+        &__row {
+            height: auto;
+            margin-bottom: 10px;
+        }
+        &__text {
+            font-size: .8rem;
+        }
+        &__subtitle {
+            font-size: 1rem;
+        }
+    }
 }
 
 
