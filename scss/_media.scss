@@ -1,0 +1,105 @@
+@media screen and (max-width:1280px) {
+    .promo {
+        &__img {
+            display: none;
+        }
+        &__title {
+            font-size: 46px;
+            margin-top: 40px;
+        }
+    }
+}
+@media screen and (max-width:1023px) {
+    .promo {
+       
+        &__title {
+            font-size: 46px;
+            margin-top: 60px;
+        }
+    }
+    .menu {
+        position: fixed;
+        
+        flex-direction: column;
+        top: 0;
+        right: -100%;
+        background: $second-color;
+        padding: 50px;
+        width: 70%;
+        height: 80vh;
+        transition: all .3s;
+        z-index: 3;
+        &_active {
+            right: 0;
+        }
+        &__item {
+            border-left: none;
+            a {
+                color: #000;
+                font-size: 16px;
+            }
+        }
+        
+    }
+    .hamburger {
+        display: flex;
+    }
+}
+@media screen and (max-width:767px) {
+    .promo {
+        &__title {
+            font-size: 24px;
+        }
+        &__item {
+            min-width: auto;
+        }
+        
+        &__btn {
+            .promo__text {
+                line-height: 120%;
+                font-size: 16px;
+            }
+        }
+        &__btns {
+            .arrow {
+                left: 108px;
+            }
+        }
+    }
+    .header {
+        &__link {
+            display: none;
+        }
+        &__contacts {
+            p {
+                display: none;
+            }
+        }
+        &__prof {
+            width: 30px;
+            height: 30px;
+           
+        }
+        
+    }
+    .btn {
+        padding: 7px 13px;
+        font-size: 12px;
+    }
+    .logo {
+        width: 100px;
+    }
+    .footer {
+        &__wrapper {
+            display: block;
+        }
+        &__item {
+            .header__link {
+                display: block;
+            }
+        }
+    }
+    .modal {
+        width: 90%;
+    }
+}
